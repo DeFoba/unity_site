@@ -1,0 +1,169 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.3.48",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Headset"
+        }
+    ],
+    "materials" : [
+        {
+            "emissiveFactor" : [
+                1,
+                1,
+                1
+            ],
+            "emissiveTexture" : {
+                "index" : 0,
+                "texCoord" : 0
+            },
+            "name" : "Headset",
+            "normalTexture" : {
+                "index" : 1,
+                "texCoord" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 2,
+                "texCoord" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 3,
+                    "texCoord" : 0
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 2,
+                    "texCoord" : 0
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Headset_004_low",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        },
+        {
+            "source" : 1
+        },
+        {
+            "source" : 2
+        },
+        {
+            "source" : 3
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Headset_emissive",
+            "uri" : "Headset_emissive.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Headset_normal",
+            "uri" : "Headset_normal.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Headset_occlusionRoughnessMetallic",
+            "uri" : "Headset_occlusionRoughnessMetallic.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Headset_baseColor",
+            "uri" : "Headset_baseColor.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 20975,
+            "max" : [
+                4.227776050567627,
+                4.435661792755127,
+                2.4714057445526123
+            ],
+            "min" : [
+                -4.255511283874512,
+                -5.494012355804443,
+                -1.6660510301589966
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 20975,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 20975,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 100380,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 251700,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 251700,
+            "byteOffset" : 251700
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 167800,
+            "byteOffset" : 503400
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 200760,
+            "byteOffset" : 671200
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 871960,
+            "uri" : "Headphones.bin"
+        }
+    ]
+}
