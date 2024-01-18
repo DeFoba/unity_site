@@ -2482,6 +2482,7 @@
                             data: t,
                             scrollProgress: i
                         } = e, {
+                            // ------------------------------------------------------------
                             section1Title: l,
                             section1Content: a,
                             section2Title: r,
@@ -2490,6 +2491,7 @@
                             section3Content: o,
                             section4Title: h,
                             section4Content: x
+                            // ------------------------------------------------------------
                         } = t, p = (0, C.useRef)(), [m, u] = (0, C.useState)(0), g = (0, c.Gc)(), [w, f] = (0, C.useState)(!1);
                         return (0, c.LI)(() => {
                             let e;

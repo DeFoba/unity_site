@@ -2124,7 +2124,8 @@
             let p = {
                     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
                     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-                    path: "/_next/image",
+                    // path: "/_next/image",
+                    path: "",
                     loader: "default",
                     dangerouslyAllowSVG: !1,
                     unoptimized: !1
@@ -2139,7 +2140,8 @@
                             width: r,
                             quality: n
                         } = e;
-                        return i.endsWith(".svg") && !t.dangerouslyAllowSVG ? i : (0, d.normalizePathTrailingSlash)(t.path) + "?url=" + encodeURIComponent(i) + "&w=" + r + "&q=" + (n || 75)
+                        // return i.endsWith(".svg") && !t.dangerouslyAllowSVG ? i : (0, d.normalizePathTrailingSlash)(t.path) + "?url=" + encodeURIComponent(i) + "&w=" + r + "&q=" + (n || 75)
+                        return i.endsWith(".svg") && !t.dangerouslyAllowSVG ? i : (0, d.normalizePathTrailingSlash)(t.path) + encodeURIComponent(i)
                     }],
                     ["imgix", function(e) {
                         let {
