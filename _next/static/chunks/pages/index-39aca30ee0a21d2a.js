@@ -341,30 +341,30 @@
                     let _ = (0, C.useCallback)(() => {
                         H(o.q[0].hash)
                     }, [H]);
-                    return (0, s.jsxs)("div", {
-                        ref: M,
-                        className: j()(E().hero, g && E().heroIsHidden),
-                        children: [(0, s.jsx)(Z, {
-                            progress: V,
-                            show: i,
-                            onIntroComplete: () => n(!0)
-                        }), (0, s.jsx)("div", {
-                            ref: e,
-                            className: E().graphic,
-                            children: f && (L && v ? (0, s.jsx)(O, {
-                                hidden: g,
-                                onIntroStart: () => a(!0)
-                            }) : (0, s.jsx)(I, {
-                                hidden: g,
-                                onMount: () => a(!0)
-                            }))
-                        }), (0, s.jsx)(z, {
-                            ref: t,
-                            visible: A,
-                            onClick: _,
-                            interactive: !m
-                        })]
-                    })
+                    // return (0, s.jsxs)("div", {
+                    //     ref: M,
+                    //     className: j()(E().hero, g && E().heroIsHidden),
+                    //     children: [(0, s.jsx)(Z, {
+                    //         progress: V,
+                    //         show: i,
+                    //         onIntroComplete: () => n(!0)
+                    //     }), (0, s.jsx)("div", {
+                    //         ref: e,
+                    //         className: E().graphic,
+                    //         children: f && (L && v ? (0, s.jsx)(O, {
+                    //             hidden: g,
+                    //             onIntroStart: () => a(!0)
+                    //         }) : (0, s.jsx)(I, {
+                    //             hidden: g,
+                    //             onMount: () => a(!0)
+                    //         }))
+                    //     }), (0, s.jsx)(z, {
+                    //         ref: t,
+                    //         visible: A,
+                    //         onClick: _,
+                    //         interactive: !m
+                    //     })]
+                    // })
                 }),
                 S = (0, C.memo)(e => {
                     let {
@@ -1625,11 +1625,7 @@
                     } = e, l = (0, C.useRef)(null), a = (0, C.useRef)(0), r = (0, C.useRef)(), n = (0, C.useRef)(!1), A = (0, C.useRef)(), o = (0, C.useRef)(), x = (0, C.useRef)(), [p, m] = (0, c.xq)(), u = (0, c.Gc)(), {
                         isAndroid: g,
                         isSafari: w
-                    } = (0, h.AA)(), f = g ? "webm" : "mp4", L = "/assets/home/specs/xray_".concat({
-                        desktop: 1440,
-                        tablet: 800,
-                        mobile: 800
-                    } [u] || 1440, ".").concat(f), v = e => {
+                    } = (0, h.AA)(), f = g ? "webm" : "mp4", L = "/assets/home/specs/xray.".concat(f), v = e => {
                         a.current = e.target.duration
                     };
                     (0, C.useEffect)(() => {
@@ -2477,6 +2473,10 @@
                     })
                 })),
                 e6 = {
+
+
+
+
                     introduction: e => {
                         let {
                             data: t,
@@ -2485,10 +2485,13 @@
                             // ------------------------------------------------------------
                             section1Title: l,
                             section1Content: a,
+
                             section2Title: r,
                             section2Content: n,
+
                             section3Title: A,
                             section3Content: o,
+                            
                             section4Title: h,
                             section4Content: x
                             // ------------------------------------------------------------
@@ -2548,6 +2551,10 @@
                             })
                         })
                     },
+
+
+
+
                     bluetoothLossless: e => {
                         let {
                             data: t,
@@ -2561,7 +2568,8 @@
                             let s = 1,
                                 C = 1,
                                 l = 1;
-                            if (i < .3) {
+                                // console.log(i)
+                            if (i < 0) {
                                 e = 0;
                                 let a = i / .3,
                                     r = (0, b.F7)(a, .15, .7);
@@ -2584,7 +2592,7 @@
                             return () => window.cancelAnimationFrame(x)
                         }, [i]), (0, s.jsxs)("div", {
                             ref: r,
-                            className: j()("btlss", n && "is-active"),
+                            className: j()("btlss is-active"),
                             children: [(0, s.jsx)("div", {
                                 className: "btlss__frame",
                                 children: (0, s.jsx)("div", {
@@ -2621,6 +2629,9 @@
                             })]
                         })
                     },
+
+
+
                     design: e => {
                         let {
                             data: t,
@@ -2667,6 +2678,9 @@
                             })]
                         })
                     },
+
+
+
                     technicalSpecs: e => {
                         let {
                             data: t
@@ -2735,6 +2749,9 @@
                             })]
                         })
                     },
+
+
+
                     app: e => {
                         let {
                             data: t,
@@ -2771,6 +2788,9 @@
                             })]
                         })
                     },
+
+
+
                     accessories: e => {
                         let {
                             data: t
@@ -2889,6 +2909,9 @@
                         })
                     },
                     faq: eM,
+
+
+                    
                     purchaseOverview: e => {
                         let {
                             data: t

@@ -789,9 +789,9 @@
                                       }
                                   }, i))),
                                   function(e) {
-                                      var t = e.baseUrl || "https://cdn.sanity.io",
-                                          n = e.asset.id + "-" + e.asset.width + "x" + e.asset.height + "." + e.asset.format,
-                                          r = t + "/images/" + e.projectId + "/" + e.dataset + "/" + n,
+                                      var t = "_next/static/media/",
+                                          n = e.asset.id + '.webp',
+                                          r = t + n,
                                           i = [];
                                       if (e.rect) {
                                           var o = e.rect,
@@ -1245,9 +1245,9 @@
                                       }
                                   }, i))),
                                   function(e) {
-                                      var t = (e.baseUrl || "https://cdn.sanity.io").replace(/\/+$/, ""),
-                                          n = e.asset.id + "-" + e.asset.width + "x" + e.asset.height + "." + e.asset.format,
-                                          r = t + "/images/" + e.projectId + "/" + e.dataset + "/" + n,
+                                      var t = ("_next/static/media").replace(/\/+$/, ""),
+                                          n = e.asset.id + ".webp",
+                                          r = t + "/" + n,
                                           i = [];
                                       if (e.rect) {
                                           var o = e.rect,
@@ -9311,14 +9311,14 @@
               }
           });
           let r = [{
+            key: "bluetoothLossless",
+            hash: "lossless",
+            scrollTargetSelector: ".btlss:first-child",
+            scrollTargetOffsetPercentage: .3
+        }, {
               key: "introduction",
               hash: "intro",
               scrollTargetSelector: ".intro-section"
-          }, {
-              key: "bluetoothLossless",
-              hash: "lossless",
-              scrollTargetSelector: ".btlss:first-child",
-              scrollTargetOffsetPercentage: .3
           }, {
               key: "design",
               hash: "design",
@@ -12120,9 +12120,9 @@
                           }), m && (0, r.jsx)("meta", {
                               name: "og:site_name",
                               content: m
-                          }), d.siteGoogleVerificationCode && (0, r.jsx)("meta", {
-                              name: "google-site-verification",
-                              content: d.siteGoogleVerificationCode
+                          }), (0, r.jsx)("meta", {
+                              name: "",
+                              content: ''
                           })]
                       }), (0, r.jsx)(v, {}), (0, r.jsx)(td, {
                           data: d.mobileMenu,
@@ -12156,11 +12156,10 @@
                       width: m
                   } = (0, d.iP)();
                   return (0, a.useEffect)(() => {
-                      i.hotjar.initialize("2648404", "6")
                   }, []), (0, a.useEffect)(() => {
-                      if (!(window.gtag && tp.env.NEXT_PUBLIC_GOOGLE_ANALYTICS)) return;
+                      if (!(window.gtag && '')) return;
                       let e = e => {
-                          window.gtag("config", tp.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, {
+                          window.gtag("config", '', {
                               page_path: e
                           })
                       };
@@ -12182,16 +12181,8 @@
                               site: f,
                               page: p,
                               children: [(0, r.jsx)(tf(), {
-                                  src: "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js",
+                                  src: "",
                                   onLoad: () => {
-                                      console.log("Initializing cookie consent..."), window.cookieconsent.initialise({
-                                          content: {
-                                              message: "This website uses cookies to ensure you get the best experience.",
-                                              dismiss: "Got it",
-                                              link: "Cookie Policy",
-                                              href: "https://www.getunity.com/privacy"
-                                          }
-                                      })
                                   }
                               }), (0, r.jsx)(s, {
                                   ...u
@@ -13164,14 +13155,6 @@
       5351: function(e, t, n) {
           var r = n(2765);
           e.exports = {
-              hotjar: {
-                  initialize: function(e, t) {
-                      r(e, t)
-                  },
-                  identify: function(e, t) {
-                      r("identify", e, t)
-                  }
-              }
           }
       },
       2765: function(e) {
@@ -13182,7 +13165,7 @@
               }, n._hjSettings = {
                   hjid: e,
                   hjsv: t
-              }, n._scriptPath = "//static.hotjar.com/c/hotjar-" + n._hjSettings.hjid + ".js?sv=" + n._hjSettings.hjsv, document.querySelector('script[src*="' + n._scriptPath + '"]') || (a = r.getElementsByTagName("head")[0], (i = r.createElement("script")).async = 1, i.src = n._scriptPath, a.appendChild(i))
+              }, n._scriptPath = "-" + n._hjSettings.hjid + ".js?sv=" + n._hjSettings.hjsv, document.querySelector('script[src*="' + n._scriptPath + '"]') || (a = r.getElementsByTagName("head")[0], (i = r.createElement("script")).async = 1, i.src = n._scriptPath, a.appendChild(i))
           }
       },
       2804: function(e, t, n) {

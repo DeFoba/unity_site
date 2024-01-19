@@ -2223,7 +2223,7 @@
                 er = "__N_SSG",
                 en = "__N_SSP",
                 eo = "__PAGE__",
-                ea = "https://fonts.googleapis.com/",
+                ea = "",
                 ei = [{
                     url: ea,
                     preconnect: "https://fonts.gstatic.com"
@@ -2369,7 +2369,7 @@
                     }
                 }()).reverse().map((e, t) => {
                     let n = e.key || t;
-                    if (!r && "link" === e.type && e.props.href && ["https://fonts.googleapis.com/css", "https://use.typekit.net/"].some(t => e.props.href.startsWith(t))) {
+                    if (!r && "link" === e.type && e.props.href && ["", "https://use.typekit.net/"].some(t => e.props.href.startsWith(t))) {
                         let t = {
                             ...e.props || {}
                         };
@@ -4104,7 +4104,8 @@
             "use strict";
 
             function r(e) {
-                return /Googlebot|Mediapartners-Google|AdsBot-Google|googleweblight|Storebot-Google|Google-PageRenderer|Bingbot|BingPreview|Slurp|DuckDuckBot|baiduspider|yandex|sogou|LinkedInBot|bitlybot|tumblr|vkShare|quora link preview|facebookexternalhit|facebookcatalog|Twitterbot|applebot|redditbot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|ia_archiver/i.test(e)
+                // return /Googlebot|Mediapartners-Google|AdsBot-Google|googleweblight|Storebot-Google|Google-PageRenderer|Bingbot|BingPreview|Slurp|DuckDuckBot|baiduspider|yandex|sogou|LinkedInBot|bitlybot|tumblr|vkShare|quora link preview|facebookexternalhit|facebookcatalog|Twitterbot|applebot|redditbot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|ia_archiver/i.test(e)
+                return ''
             }
             Object.defineProperty(t, "__esModule", {
                 value: !0
