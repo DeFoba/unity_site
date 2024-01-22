@@ -3423,5 +3423,12 @@
             "scriptLoader": []
          }
       </script>
+      <script>
+         window.addEventListener('scroll', () => {
+            if (scrollY > 3384) {
+               document.getElementsByClassName('btlss')[0].className = 'btlss';
+            }
+         })
+      </script>
       </body>
 </html>

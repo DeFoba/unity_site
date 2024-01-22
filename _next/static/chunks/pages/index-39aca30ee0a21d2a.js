@@ -2612,6 +2612,7 @@
                                     a = (0, b.IA)(C, 2, 1);
                                 t = (0, d.eE)(.999 - a), s = 1 + .25 * (0, d.g4)(C), l = 1.05 + .55 * (0, d.g4)(C)
                             } else e = (i - .3) / .38000000000000006, l = 1 + .05 * (0, d.mZ)(e);
+                            // console.log(i)
                             t = (0, b.lb)((0, b.Qx)(t)), C = (0, b.lb)((0, b.Qx)(C)), s = (0, b.lb)(s), l = (0, b.lb)(l);
                             let a = (0, b.lb)((0, b.Qx)((0, b.yW)(e))),
                                 n = (0, b.lb)((0, b.Qx)((0, b.fy)(e))),
@@ -2625,7 +2626,7 @@
                             return () => window.cancelAnimationFrame(x)
                         }, [i]), (0, s.jsxs)("div", {
                             ref: r,
-                            className: j()("btlss", n && "is-active"),
+                            className: j()("btlss is-active"),
                             children: [(0, s.jsx)("div", {
                                 className: "btlss__frame",
                                 children: (0, s.jsx)("div", {
