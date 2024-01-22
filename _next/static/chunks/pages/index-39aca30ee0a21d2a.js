@@ -2844,110 +2844,110 @@
                             addOnsDisplayTitle: n,
                             addOns: A
                         } = t;
-                        return (0, s.jsxs)("section", {
-                            className: "accessories-section",
-                            children: [(0, s.jsx)("div", {
-                                className: "accessories-subsection sec100",
-                                children: (0, s.jsxs)("div", {
-                                    className: "section-container",
-                                    children: [(0, s.jsx)("h3", {
-                                        className: "section-title",
-                                        children: i || C
-                                    }), (0, s.jsxs)("div", {
-                                        className: "accessories-grid",
-                                        children: [(0, s.jsxs)("div", {
-                                            className: "accessories-grid__primary",
-                                            children: [(0, s.jsx)("div", {
-                                                className: "hide-on-mobile",
-                                                children: (0, s.jsx)(eD, {
-                                                    children: r.images.map((e, t) => (0, s.jsx)(ex.o5, {
-                                                        children: (0, s.jsx)(eF, {
-                                                            image: e,
-                                                            alt: e.alt
-                                                        })
-                                                    }, t))
-                                                })
-                                            }), (0, s.jsx)("div", {
-                                                className: "hide-on-desktop",
-                                                children: (0, s.jsx)(eD, {
-                                                    children: a.images.map((e, t) => (0, s.jsx)(ex.o5, {
-                                                        children: (0, s.jsx)(eF, {
-                                                            image: e,
-                                                            alt: e.alt
-                                                        })
-                                                    }, t))
-                                                })
-                                            })]
-                                        }), (0, s.jsx)("div", {
-                                            className: "accessories-grid__secondary",
-                                            children: l.map((e, t) => (0, s.jsx)(ez, {
-                                                title: e.title,
-                                                content: e.content
-                                            }, t))
-                                        })]
-                                    })]
-                                })
-                            }), A && A.length > 0 && (0, s.jsx)("div", {
-                                className: "accessories-subsection sec100",
-                                children: (0, s.jsxs)("div", {
-                                    className: "section-container",
-                                    children: [(0, s.jsx)("h3", {
-                                        className: "section-title",
-                                        children: n || "Add-Ons"
-                                    }), 1 === A.length ? (0, s.jsxs)("div", {
-                                        className: "accessories-grid",
-                                        children: [(0, s.jsx)("div", {
-                                            className: "accessories-grid__primary",
-                                            children: addons[0].product && (0, s.jsxs)(s.Fragment, {
-                                                children: [(0, s.jsx)("div", {
-                                                    className: "hide-on-mobile",
-                                                    children: (0, s.jsx)(eD, {
-                                                        children: A[0].product.horizontalImageGallery.images.map((e, t) => (0, s.jsx)(ex.o5, {
-                                                            children: (0, s.jsx)(eF, {
-                                                                image: e,
-                                                                alt: e.alt
-                                                            })
-                                                        }, t))
-                                                    })
-                                                }), (0, s.jsx)("div", {
-                                                    className: "hide-on-desktop",
-                                                    children: (0, s.jsx)(eD, {
-                                                        children: A[0].product.squareImageGallery.images.map((e, t) => (0, s.jsx)(ex.o5, {
-                                                            children: (0, s.jsx)(eF, {
-                                                                image: e,
-                                                                alt: e.alt
-                                                            })
-                                                        }, t))
-                                                    })
-                                                })]
-                                            })
-                                        }), (0, s.jsxs)("div", {
-                                            className: "accessories-grid__secondary",
-                                            children: [(0, s.jsx)(ez, {
-                                                title: A[0].title,
-                                                content: A[0].description
-                                            }), A[0].details && A[0].details.map((e, t) => {
-                                                let {
-                                                    title: i,
-                                                    content: C
-                                                } = e;
-                                                return (0, s.jsx)(ez, {
-                                                    title: i,
-                                                    content: C
-                                                }, "detail-fact-".concat(t))
-                                            }), (0, s.jsx)(eS, {
-                                                product: A[0].product
-                                            })]
-                                        })]
-                                    }) : (0, s.jsx)("div", {
-                                        className: "add-on-grid",
-                                        children: A.map((e, t) => (0, s.jsx)(eU, {
-                                            ...e
-                                        }, t))
-                                    })]
-                                })
-                            })]
-                        })
+                        // return (0, s.jsxs)("section", {
+                        //     className: "accessories-section",
+                        //     children: [(0, s.jsx)("div", {
+                        //         className: "accessories-subsection sec100",
+                        //         children: (0, s.jsxs)("div", {
+                        //             className: "section-container",
+                        //             children: [(0, s.jsx)("h3", {
+                        //                 className: "section-title",
+                        //                 children: i || C
+                        //             }), (0, s.jsxs)("div", {
+                        //                 className: "accessories-grid",
+                        //                 children: [(0, s.jsxs)("div", {
+                        //                     className: "accessories-grid__primary",
+                        //                     children: [(0, s.jsx)("div", {
+                        //                         className: "hide-on-mobile",
+                        //                         children: (0, s.jsx)(eD, {
+                        //                             children: r.images.map((e, t) => (0, s.jsx)(ex.o5, {
+                        //                                 children: (0, s.jsx)(eF, {
+                        //                                     image: e,
+                        //                                     alt: e.alt
+                        //                                 })
+                        //                             }, t))
+                        //                         })
+                        //                     }), (0, s.jsx)("div", {
+                        //                         className: "hide-on-desktop",
+                        //                         children: (0, s.jsx)(eD, {
+                        //                             children: a.images.map((e, t) => (0, s.jsx)(ex.o5, {
+                        //                                 children: (0, s.jsx)(eF, {
+                        //                                     image: e,
+                        //                                     alt: e.alt
+                        //                                 })
+                        //                             }, t))
+                        //                         })
+                        //                     })]
+                        //                 }), (0, s.jsx)("div", {
+                        //                     className: "accessories-grid__secondary",
+                        //                     children: l.map((e, t) => (0, s.jsx)(ez, {
+                        //                         title: e.title,
+                        //                         content: e.content
+                        //                     }, t))
+                        //                 })]
+                        //             })]
+                        //         })
+                        //     }), A && A.length > 0 && (0, s.jsx)("div", {
+                        //         className: "accessories-subsection sec100",
+                        //         children: (0, s.jsxs)("div", {
+                        //             className: "section-container",
+                        //             children: [(0, s.jsx)("h3", {
+                        //                 className: "section-title",
+                        //                 children: n || "Add-Ons"
+                        //             }), 1 === A.length ? (0, s.jsxs)("div", {
+                        //                 className: "accessories-grid",
+                        //                 children: [(0, s.jsx)("div", {
+                        //                     className: "accessories-grid__primary",
+                        //                     children: addons[0].product && (0, s.jsxs)(s.Fragment, {
+                        //                         children: [(0, s.jsx)("div", {
+                        //                             className: "hide-on-mobile",
+                        //                             children: (0, s.jsx)(eD, {
+                        //                                 children: A[0].product.horizontalImageGallery.images.map((e, t) => (0, s.jsx)(ex.o5, {
+                        //                                     children: (0, s.jsx)(eF, {
+                        //                                         image: e,
+                        //                                         alt: e.alt
+                        //                                     })
+                        //                                 }, t))
+                        //                             })
+                        //                         }), (0, s.jsx)("div", {
+                        //                             className: "hide-on-desktop",
+                        //                             children: (0, s.jsx)(eD, {
+                        //                                 children: A[0].product.squareImageGallery.images.map((e, t) => (0, s.jsx)(ex.o5, {
+                        //                                     children: (0, s.jsx)(eF, {
+                        //                                         image: e,
+                        //                                         alt: e.alt
+                        //                                     })
+                        //                                 }, t))
+                        //                             })
+                        //                         })]
+                        //                     })
+                        //                 }), (0, s.jsxs)("div", {
+                        //                     className: "accessories-grid__secondary",
+                        //                     children: [(0, s.jsx)(ez, {
+                        //                         title: A[0].title,
+                        //                         content: A[0].description
+                        //                     }), A[0].details && A[0].details.map((e, t) => {
+                        //                         let {
+                        //                             title: i,
+                        //                             content: C
+                        //                         } = e;
+                        //                         return (0, s.jsx)(ez, {
+                        //                             title: i,
+                        //                             content: C
+                        //                         }, "detail-fact-".concat(t))
+                        //                     }), (0, s.jsx)(eS, {
+                        //                         product: A[0].product
+                        //                     })]
+                        //                 })]
+                        //             }) : (0, s.jsx)("div", {
+                        //                 className: "add-on-grid",
+                        //                 children: A.map((e, t) => (0, s.jsx)(eU, {
+                        //                     ...e
+                        //                 }, t))
+                        //             })]
+                        //         })
+                        //     })]
+                        // })
                     },
                     faq: eM,
 
@@ -2963,82 +2963,82 @@
                         } = t, [a, r] = (0, c.vb)({
                             rootMargin: "-10% 0px"
                         }), n = (0, h._T)(), A = n.variants[0], d = (0, h.V6)(A), o = A && A.inStock && !0, x = r ? "show" : "hide";
-                        return (0, s.jsxs)("section", {
-                            className: "purchase-overview",
-                            children: [(0, s.jsx)("div", {
-                                className: "section-container",
-                                children: (0, s.jsxs)("div", {
-                                    ref: a,
-                                    className: "purchase-overview__content",
-                                    children: [(0, s.jsx)("h3", {
-                                        className: "section-title",
-                                        children: C || i
-                                    }), (0, s.jsxs)("div", {
-                                        className: "purchase-overview__list",
-                                        children: [l.map((e, t) => {
-                                            let {
-                                                title: i,
-                                                content: C,
-                                                icon: l
-                                            } = e, a = e3[l];
-                                            return (0, s.jsxs)("div", {
-                                                className: "purchase-overview__item",
-                                                children: [(0, s.jsx)("div", {
-                                                    className: "purchase-overview__item-icon",
-                                                    children: a && (0, s.jsx)(a, {})
-                                                }), (0, s.jsxs)("div", {
-                                                    children: [(0, s.jsx)("h5", {
-                                                        className: "small-title",
-                                                        children: i
-                                                    }), (0, s.jsx)("div", {
-                                                        className: "purchase-overview__item-content",
-                                                        children: (0, s.jsx)(P(), {
-                                                            blocks: C,
-                                                            serializers: J.f
-                                                        })
-                                                    })]
-                                                })]
-                                            }, t)
-                                        }), o && (0, s.jsx)("div", {
-                                            className: "purchase-overview__item",
-                                            children: (0, s.jsx)("button", {
-                                                className: "btn btn--primary btn--lg btn--block",
-                                                onClick: () => d(),
-                                                children: (0, s.jsx)("strong", {
-                                                    children: "Purchase Now"
-                                                })
-                                            })
-                                        })]
-                                    })]
-                                })
-                            }), (0, s.jsx)("div", {
-                                className: "purchase-overview__hero",
-                                children: (0, s.jsxs)("div", {
-                                    className: "purchase-overview__hero-position",
-                                    children: [(0, s.jsx)(p.E.div, {
-                                        animate: x,
-                                        variants: e4,
-                                        initial: "hidden",
-                                        className: "purchase-overview__hero-image",
-                                        children: (0, s.jsx)(B(), {
-                                            src: e2,
-                                            layout: "fill",
-                                            objectFit: "contain",
-                                            alt: "",
-                                            priority: !0
-                                        })
-                                    }), (0, s.jsx)(p.E.div, {
-                                        animate: x,
-                                        variants: e5,
-                                        initial: "hidden",
-                                        className: "purchase-overview__hero-image-spotlight-container",
-                                        children: (0, s.jsx)("div", {
-                                            className: "purchase-overview__hero-image-spotlight"
-                                        })
-                                    })]
-                                })
-                            })]
-                        })
+                        // return (0, s.jsxs)("section", {
+                        //     className: "purchase-overview",
+                        //     children: [(0, s.jsx)("div", {
+                        //         className: "section-container",
+                        //         children: (0, s.jsxs)("div", {
+                        //             ref: a,
+                        //             className: "purchase-overview__content",
+                        //             children: [(0, s.jsx)("h3", {
+                        //                 className: "section-title",
+                        //                 children: C || i
+                        //             }), (0, s.jsxs)("div", {
+                        //                 className: "purchase-overview__list",
+                        //                 children: [l.map((e, t) => {
+                        //                     let {
+                        //                         title: i,
+                        //                         content: C,
+                        //                         icon: l
+                        //                     } = e, a = e3[l];
+                        //                     return (0, s.jsxs)("div", {
+                        //                         className: "purchase-overview__item",
+                        //                         children: [(0, s.jsx)("div", {
+                        //                             className: "purchase-overview__item-icon",
+                        //                             children: a && (0, s.jsx)(a, {})
+                        //                         }), (0, s.jsxs)("div", {
+                        //                             children: [(0, s.jsx)("h5", {
+                        //                                 className: "small-title",
+                        //                                 children: i
+                        //                             }), (0, s.jsx)("div", {
+                        //                                 className: "purchase-overview__item-content",
+                        //                                 children: (0, s.jsx)(P(), {
+                        //                                     blocks: C,
+                        //                                     serializers: J.f
+                        //                                 })
+                        //                             })]
+                        //                         })]
+                        //                     }, t)
+                        //                 }), o && (0, s.jsx)("div", {
+                        //                     className: "purchase-overview__item",
+                        //                     children: (0, s.jsx)("button", {
+                        //                         className: "btn btn--primary btn--lg btn--block",
+                        //                         onClick: () => d(),
+                        //                         children: (0, s.jsx)("strong", {
+                        //                             children: "Purchase Now"
+                        //                         })
+                        //                     })
+                        //                 })]
+                        //             })]
+                        //         })
+                        //     }), (0, s.jsx)("div", {
+                        //         className: "purchase-overview__hero",
+                        //         children: (0, s.jsxs)("div", {
+                        //             className: "purchase-overview__hero-position",
+                        //             children: [(0, s.jsx)(p.E.div, {
+                        //                 animate: x,
+                        //                 variants: e4,
+                        //                 initial: "hidden",
+                        //                 className: "purchase-overview__hero-image",
+                        //                 children: (0, s.jsx)(B(), {
+                        //                     src: e2,
+                        //                     layout: "fill",
+                        //                     objectFit: "contain",
+                        //                     alt: "",
+                        //                     priority: !0
+                        //                 })
+                        //             }), (0, s.jsx)(p.E.div, {
+                        //                 animate: x,
+                        //                 variants: e5,
+                        //                 initial: "hidden",
+                        //                 className: "purchase-overview__hero-image-spotlight-container",
+                        //                 children: (0, s.jsx)("div", {
+                        //                     className: "purchase-overview__hero-image-spotlight"
+                        //                 })
+                        //             })]
+                        //         })
+                        //     })]
+                        // })
                     },
                     resources: e7
                 },

@@ -9336,18 +9336,22 @@
               hash: "app",
               scrollTargetSelector: ".app-slide, .app-fixed-slide",
               scrollTargetOffsetPercentage: 0
-          }, {
-              key: "accessories",
-              hash: "accessories",
-              scrollTargetSelector: ".accessories-subsection"
-          }, {
+          }, 
+        //   {
+        //       key: "accessories",
+        //       hash: "accessories",
+        //       scrollTargetSelector: ".accessories-subsection"
+        //   }, 
+          {
               key: "faq",
               hash: "faq",
               scrollTargetSelector: ".faq-section"
-          }, {
-              key: "purchaseOverview",
-              hash: "purchase"
-          }, {
+          }, 
+        //   {
+        //       key: "purchaseOverview",
+        //       hash: "purchase"
+        //   }, 
+          {
               key: "resources",
               hash: "resources"
           }]
