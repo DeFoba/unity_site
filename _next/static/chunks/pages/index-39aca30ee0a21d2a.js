@@ -593,7 +593,7 @@
                 } = e, C = (0, h.J9)();
                 // console.log({t, i, e})
                 return (0, s.jsx)("div", {
-                    className: j()("btlss-bg is-active"),
+                    className: j()("btlss-bg", t && "is-active"),
                     children: (0, s.jsx)("div", {
                         className: "btlss-bg__scale",
                         children: (0, s.jsx)("div", {
@@ -2625,7 +2625,7 @@
                             return () => window.cancelAnimationFrame(x)
                         }, [i]), (0, s.jsxs)("div", {
                             ref: r,
-                            className: j()("btlss is-active"),
+                            className: j()("btlss", n && "is-active"),
                             children: [(0, s.jsx)("div", {
                                 className: "btlss__frame",
                                 children: (0, s.jsx)("div", {
