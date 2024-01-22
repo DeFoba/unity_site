@@ -2681,43 +2681,43 @@
                             slide2: (0, b.IA)(i, 3, 0.5),
                             slide3: (0, b.IA)(i, 3, 2)
                         }, d = i > 0 && i < .99;
-                        return (0, s.jsxs)("section", {
-                            className: j()("design-sections-wrapper", d && "is-active"),
-                            children: [
+                        // return (0, s.jsxs)("section", {
+                        //     className: j()("design-sections-wrapper", d && "is-active"),
+                        //     children: [
                                 
-                            //     (0, s.jsx)(eb, {
-                            //     type: "component-housing",
-                            //     progress: c.slide1,
-                            //     title: C,
-                            //     content: l,
-                            //     image: eH,
-                            //     imageMobile: eH,
-                            //     imageAlt: "Unity Headphones Earcups"
-                            // }), 
+                        //     //     (0, s.jsx)(eb, {
+                        //     //     type: "component-housing",
+                        //     //     progress: c.slide1,
+                        //     //     title: C,
+                        //     //     content: l,
+                        //     //     image: eH,
+                        //     //     imageMobile: eH,
+                        //     //     imageAlt: "Unity Headphones Earcups"
+                        //     // }), 
                             
-                            (0, s.jsx)(eb, {
-                                type: "headband",
-                                progress: c.slide2,
-                                title: a,
-                                content: r,
-                                image: e_,
-                                imageMobile: eE,
-                                imageAlt: "Unity Headphones Headband",
-                                vertical: !0
-                            })
+                        //     (0, s.jsx)(eb, {
+                        //         type: "headband",
+                        //         progress: c.slide2,
+                        //         title: a,
+                        //         content: r,
+                        //         image: e_,
+                        //         imageMobile: eE,
+                        //         imageAlt: "Unity Headphones Headband",
+                        //         vertical: !0
+                        //     })
                             
-                            // (0, s.jsx)(eb, {
-                            //     type: "ear-cushions",
-                            //     progress: c.slide3,
-                            //     title: n,
-                            //     content: A,
-                            //     image: eN,
-                            //     imageMobile: eN,
-                            //     imageAlt: "Unity Headphones Ear Cushions"
-                            // })
+                        //     // (0, s.jsx)(eb, {
+                        //     //     type: "ear-cushions",
+                        //     //     progress: c.slide3,
+                        //     //     title: n,
+                        //     //     content: A,
+                        //     //     image: eN,
+                        //     //     imageMobile: eN,
+                        //     //     imageAlt: "Unity Headphones Ear Cushions"
+                        //     // })
                         
-                        ]
-                        })
+                        // ]
+                        // })
                     },
 
 
