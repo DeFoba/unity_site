@@ -10930,7 +10930,8 @@
                                       }), "newsletter" === e.type && (0, r.jsx)("div", {
                                           className: "footer-newsletter-content",
                                           children: (0, r.jsx)(eD, {})
-                                      }), "menu" === e.type && (null === (n = e.menu) || void 0 === n ? void 0 : n.items) && (0, r.jsx)("div", {
+                                      }),
+                                      "menu" === e.type && (null === (n = e.menu) || void 0 === n ? void 0 : n.items) && (0, r.jsx)("div", {
                                           className: "p-sm",
                                           children: (0, r.jsx)("ul", {
                                               children: e.menu.items.map((e, t) => (0, r.jsx)("li", {
@@ -10939,7 +10940,8 @@
                                                   })
                                               }, t))
                                           })
-                                      })]
+                                      })
+                                    ]
                                   }, t)
                               })
                           }), (0, r.jsxs)("div", {

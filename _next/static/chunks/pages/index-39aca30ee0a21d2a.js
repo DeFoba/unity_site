@@ -399,7 +399,7 @@
                         image: t,
                         imageAlt: i
                     } = e;
-                    console.log(e);
+                    // console.log(e);
                     return (0, s.jsx)(B(), {
                         src: t,
                         layout: "fill",
@@ -591,8 +591,9 @@
                     active: t = !1,
                     progress: i
                 } = e, C = (0, h.J9)();
+                // console.log({t, i, e})
                 return (0, s.jsx)("div", {
-                    className: j()("btlss-bg", t && "is-active"),
+                    className: j()("btlss-bg is-active"),
                     children: (0, s.jsx)("div", {
                         className: "btlss-bg__scale",
                         children: (0, s.jsx)("div", {
@@ -2562,18 +2563,35 @@
                         } = e, {
                             compareText: l,
                             losslessText: a
-                        } = t, r = (0, C.useRef)(null), [n, A] = (0, C.useState)(!1), [o, h] = (0, C.useState)(0), [x, p] = (0, C.useState)(0);
+                        } = t, r = (0, C.useRef)(null), [n, A] = (1, C.useState)(1), [o, h] = (0, C.useState)(0), [x, p] = (0, C.useState)(0);
+                        // console.log({t, r})
                         return (0, c.LI)(() => {
                             let e, t;
                             let s = 1,
                                 C = 1,
                                 l = 1;
                                 // console.log(i)
-                            if (i < 0) {
+
+                            // e = 0;
+                            // let _a = i / .3, r = (0, b.F7)(_a, .15, .7);
+                            // t = (0, d.Y3)(_a), s = .95 + .05 * (0, d.Y3)(r), C = (0, d.eE)(r), l = .75 + .25 * (0, d.Y3)(_a)
+                            // console.log(t)
+
+                            
+                            
+                            if (i == 0) {
+
                                 e = 0;
                                 let a = i / .3,
                                     r = (0, b.F7)(a, .15, .7);
-                                t = (0, d.Y3)(a), s = .95 + .05 * (0, d.Y3)(r), C = (0, d.eE)(r), l = .75 + .25 * (0, d.Y3)(a)
+                                t = (0, d.Y3)(1), s = .95 + .05 * (0, d.Y3)(1), C = (0, d.eE)(1), l = .75 + .25 * (0, d.Y3)(1)
+
+                            }else if (i < .3) {
+                                e = 0;
+                                let a = i / .3,
+                                    r = (0, b.F7)(a, .15, .7);
+                                t = (0, d.Y3)(1), s = .95 + .05 * (0, d.Y3)(1), C = (0, d.eE)(1), l = .75 + .25 * (0, d.Y3)(1)
+                                // console.log({a})
                             } else if (i > .68) {
                                 e = 1;
                                 let C = (i - .68) / .31999999999999995,
@@ -2587,6 +2605,7 @@
                                 o = c + 50;
                             A(i > 0 && i < 1), h(e), p(i > .5 ? 1 : 0);
                             let x = window.requestAnimationFrame(() => {
+                                // console.log({t, s, C, l, a, n, c, o});
                                 r.current.style.opacity = t, r.current.style.setProperty("--scale", s), r.current.style.setProperty("--scale-opacity", C), r.current.style.setProperty("--bg-scale", l), r.current.style.setProperty("--in-opacity", a), r.current.style.setProperty("--out-opacity", n), r.current.style.setProperty("--gradient-progress-1", "".concat(c, "%")), r.current.style.setProperty("--gradient-progress-2", "".concat(o, "%"))
                             });
                             return () => window.cancelAnimationFrame(x)

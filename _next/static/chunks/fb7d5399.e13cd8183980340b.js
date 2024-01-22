@@ -9067,6 +9067,7 @@
                     for (let i = 0; i < e.length; i++) {
                         let n = e[i],
                             r = N.getContext(n, t);
+                            console.log({n, t, r})
                         if (null !== r) return r
                     }
                     return null
@@ -9074,6 +9075,7 @@
                 try {
                     if (N.addEventListener("webglcontextlost", eR, !1), N.addEventListener("webglcontextrestored", eC, !1), null === eT) {
                         let e = ["webgl2", "webgl", "experimental-webgl"];
+                        console.log({O, F, B, U, H, G, V, k})
                         if (!0 === Y.isWebGL1Renderer && e.shift(), eT = eE(e, {
                                 alpha: O,
                                 depth: F,
