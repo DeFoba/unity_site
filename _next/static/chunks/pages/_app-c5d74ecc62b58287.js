@@ -9319,11 +9319,14 @@
               key: "introduction",
               hash: "intro",
               scrollTargetSelector: ".intro-section"
-          }, {
+          }, 
+          {
               key: "design",
               hash: "design",
               scrollTargetSelector: ".design-section:first-child"
-          }, {
+          }, 
+          
+          {
               key: "technicalSpecs",
               hash: "specs",
               scrollTargetSelector: ".spec-section:first-child",

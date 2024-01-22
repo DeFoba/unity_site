@@ -541,7 +541,7 @@
                 });
                 return (0, s.jsxs)("div", {
                     ref: h,
-                    className: j()("intro-section", "section-".concat(t), o && "is-active"),
+                    className: j()("intro-section is-active"),
                     children: [(0, s.jsx)("div", {
                         className: "intro-content",
                         children: (0, s.jsx)("div", {
@@ -1532,7 +1532,8 @@
                                 x.current.style.opacity = i, u || (x.current.style.setProperty("--bg-shift", "".concat(s, "px")), x.current.style.setProperty("--bg-scale-h", C), x.current.style.setProperty("--bg-scale-v-mobile", l), x.current.style.setProperty("--bg-scale-v-desktop", a))
                             }, []);
                         return () => window.cancelAnimationFrame(r)
-                    }, [t]), (0, s.jsxs)("div", {
+                    }, [t]), 
+                    (0, s.jsxs)("div", {
                         className: j()("design-section", i, p && "is-active"),
                         children: [(0, s.jsx)("div", {
                             className: "design-featurette",
@@ -2484,14 +2485,14 @@
                             scrollProgress: i
                         } = e, {
                             // ------------------------------------------------------------
-                            section1Title: l,
-                            section1Content: a,
+                            // section1Title: l,
+                            // section1Content: a,
 
-                            section2Title: r,
-                            section2Content: n,
+                            // section2Title: r,
+                            // section2Content: n,
 
-                            section3Title: A,
-                            section3Content: o,
+                            // section3Title: A,
+                            // section3Content: o,
                             
                             section4Title: h,
                             section4Content: x
@@ -2510,34 +2511,45 @@
                                     p.current.style.setProperty("--content-opacity", l)
                                 });
                             return () => window.cancelAnimationFrame(a)
-                        }, [i, g]), (0, s.jsx)("section", {
+                        }, [i, g])
+                        
+                        , (0, s.jsx)
+                        ("section", {
                             children: (0, s.jsxs)("div", {
                                 ref: p,
                                 className: j()("intro-sections", w && "is-visible"),
-                                children: [(0, s.jsx)(X, {
-                                    number: 1,
-                                    title: l,
-                                    content: a,
-                                    image: q,
-                                    imageAlt: "Unity Headphones",
-                                    videoFileNameBase: "02_Hear",
-                                    active: 0 === m
-                                }, "sec-1"), (0, s.jsx)(X, {
-                                    number: 2,
-                                    title: r,
-                                    content: n,
-                                    image: T,
-                                    imageAlt: "Unity Headphones in Profile",
-                                    active: 1 === m
-                                }, "sec-2"), (0, s.jsx)(X, {
-                                    number: 3,
-                                    title: A,
-                                    content: o,
-                                    image: K,
-                                    imageAlt: "Unity Headphones",
-                                    videoFileNameBase: "03_Waiting",
-                                    active: 2 === m
-                                }, "sec-3"), (0, s.jsx)(X, {
+                                children: [
+                                    
+                                //     (0, s.jsx)(X, {
+                                //     number: 1,
+                                //     title: l,
+                                //     content: a,
+                                //     image: q,
+                                //     imageAlt: "Unity Headphones",
+                                //     videoFileNameBase: "02_Hear",
+                                //     active: 0 === m
+                                // }, "sec-1"), 
+                                
+                                // (0, s.jsx)(X, {
+                                //     number: 2,
+                                //     title: r,
+                                //     content: n,
+                                //     image: T,
+                                //     imageAlt: "Unity Headphones in Profile",
+                                //     active: 1 === m
+                                // }, "sec-2"), 
+                                
+                                // (0, s.jsx)(X, {
+                                //     number: 3,
+                                //     title: A,
+                                //     content: o,
+                                //     image: K,
+                                //     imageAlt: "Unity Headphones",
+                                //     videoFileNameBase: "03_Waiting",
+                                //     active: 2 === m
+                                // }, "sec-3"), 
+                                
+                                (0, s.jsx)(X, {
                                     number: 4,
                                     title: h,
                                     content: x,
@@ -2548,9 +2560,11 @@
                                     mediaMask: !0,
                                     showIcons: !0,
                                     active: 3 === m
-                                }, "sec-4")]
+                                }, "sec-1")]
                             })
-                        })
+                        }
+                        
+                        )
                     },
 
 
@@ -2664,20 +2678,24 @@
                             earCushionsContent: A
                         } = t, c = {
                             slide1: (0, b.IA)(i, 3, 0),
-                            slide2: (0, b.IA)(i, 3, 1),
+                            slide2: (0, b.IA)(i, 3, 0.5),
                             slide3: (0, b.IA)(i, 3, 2)
                         }, d = i > 0 && i < .99;
                         return (0, s.jsxs)("section", {
                             className: j()("design-sections-wrapper", d && "is-active"),
-                            children: [(0, s.jsx)(eb, {
-                                type: "component-housing",
-                                progress: c.slide1,
-                                title: C,
-                                content: l,
-                                image: eH,
-                                imageMobile: eH,
-                                imageAlt: "Unity Headphones Earcups"
-                            }), (0, s.jsx)(eb, {
+                            children: [
+                                
+                            //     (0, s.jsx)(eb, {
+                            //     type: "component-housing",
+                            //     progress: c.slide1,
+                            //     title: C,
+                            //     content: l,
+                            //     image: eH,
+                            //     imageMobile: eH,
+                            //     imageAlt: "Unity Headphones Earcups"
+                            // }), 
+                            
+                            (0, s.jsx)(eb, {
                                 type: "headband",
                                 progress: c.slide2,
                                 title: a,
@@ -2686,15 +2704,19 @@
                                 imageMobile: eE,
                                 imageAlt: "Unity Headphones Headband",
                                 vertical: !0
-                            }), (0, s.jsx)(eb, {
-                                type: "ear-cushions",
-                                progress: c.slide3,
-                                title: n,
-                                content: A,
-                                image: eN,
-                                imageMobile: eN,
-                                imageAlt: "Unity Headphones Ear Cushions"
-                            })]
+                            })
+                            
+                            // (0, s.jsx)(eb, {
+                            //     type: "ear-cushions",
+                            //     progress: c.slide3,
+                            //     title: n,
+                            //     content: A,
+                            //     image: eN,
+                            //     imageMobile: eN,
+                            //     imageAlt: "Unity Headphones Ear Cushions"
+                            // })
+                        
+                        ]
                         })
                     },
 
