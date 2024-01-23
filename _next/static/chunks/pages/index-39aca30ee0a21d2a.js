@@ -3119,8 +3119,10 @@
                     (0, C.useEffect)(() => {
                         let e;
                         let t = window.location.hash.replace("#", "");
+                        // console.log(t);
                         if (t) {
                             let i = r.findIndex(e => e.hash === t);
+                            // console.log({i});
                             e = setTimeout(() => M(i, !1), 250)
                         }
                         return () => clearTimeout(e)
