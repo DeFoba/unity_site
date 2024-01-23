@@ -9315,7 +9315,16 @@
             hash: "lossless",
             scrollTargetSelector: ".btlss:first-child",
             scrollTargetOffsetPercentage: .3
-        }, {
+        }, 
+        
+        {
+            key: "app",
+            hash: "app",
+            scrollTargetSelector: ".app-slide, .app-fixed-slide",
+            scrollTargetOffsetPercentage: 0
+        }, 
+        
+        {
               key: "introduction",
               hash: "intro",
               scrollTargetSelector: ".intro-section"
@@ -9331,12 +9340,8 @@
               hash: "specs",
               scrollTargetSelector: ".spec-section:first-child",
               scrollTargetOffsetPercentage: .5
-          }, {
-              key: "app",
-              hash: "app",
-              scrollTargetSelector: ".app-slide, .app-fixed-slide",
-              scrollTargetOffsetPercentage: 0
-          }, 
+          },
+          
         //   {
         //       key: "accessories",
         //       hash: "accessories",
