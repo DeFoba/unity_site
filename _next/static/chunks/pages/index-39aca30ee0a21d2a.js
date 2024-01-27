@@ -480,6 +480,15 @@
                     }), C && (0, s.jsx)("div", {
                         className: "intro-featurette__footer",
                         children: (0, s.jsx)(F, {})
+                    }),
+                
+                
+                    (0, s.jsx)("div", {
+                        className: "buy-btn-content",
+                        children: (0, s.jsx)("button", {
+                            className: "btn btn--sm btn--primary buy-btn buy-center",
+                            children: "Buy"
+                        })
                     })]
                 })
             });
@@ -1175,14 +1184,29 @@
                                 className: "large-title",
                                 children: (0, s.jsx)("span", {
                                     className: j()("btlss-fadeable-title-text", "is-top", 0 === t && "is-active"),
-                                    children: "Bluetooth vs. True Lossless"
+                                    // children: "Bluetooth vs. True Lossless"
+
+
+                                    children: [(0, s.jsx)("img", {
+                                        src: '_next/static/media/logo.png',
+                                        alt: 'logo.svg',
+                                        width: '100%'
+                                    })]
+
+
+
                                 })
                             }), (0, s.jsx)("h3", {
                                 ref: a,
                                 className: "large-title",
                                 children: (0, s.jsxs)("span", {
                                     className: j()("btlss-fadeable-title-text", "is-bottom", 1 === t && "is-active"),
-                                    children: ["TRUE", (0, s.jsx)("br", {}), "LOSSLESS"]
+                                    // children: ["TRUE", (0, s.jsx)("br", {}), "LOSSLESS"]
+                                    children: [(0, s.jsx)("img", {
+                                        src: '_next/static/media/logo.png',
+                                        alt: 'logo.svg',
+                                        width: '100%'
+                                    })]
                                 })
                             })]
                         })
@@ -1719,7 +1743,7 @@
                             className: "section-container",
                             children: [(0, s.jsx)("h3", {
                                 className: "base-title",
-                                children: "Detailed Specs"
+                                children: "Roadmap: Orchestrating the Future with VibeAI"
                             }), (0, s.jsx)(p.E.div, {
                                 initial: "hidden",
                                 animate: l ? "show" : "hide",
@@ -2040,6 +2064,18 @@
                                         blocks: i,
                                         serializers: J.f
                                     })
+                                }), (0, s.jsx)(s.Fragment, {
+                                    children: (t || i) && (0, s.jsxs)("div", {
+                                        className: j()("download-links", eW().links),
+                                        // <a href="https://telegram.im/@test" target="_blank" class="telegramim_button telegramim_shadow telegramim_pulse" style="font-size:26px;width:322px;background:#ffffff;box-shadow:1px 1px 5px #ffffff;color:#000000;border-radius:50px;" title=""><i></i> VibeAI Platform</a>
+                                        children: [(0, s.jsx)("a", {
+                                            href: "https://telegram.im/@test",
+                                            target: "_blank",
+                                            // rel: "noreferrer",
+                                            className: "telegramim_button telegramim_shadow tg_btn",
+                                            children: [(0, s.jsx)("i", {}), " VibeAI Platform"]
+                                        })]
+                                    })
                                 }), C]
                             })
                         })
@@ -2069,32 +2105,17 @@
                         googlePlay: i
                     } = e;
                     return (0, s.jsx)(s.Fragment, {
-                        children: (t || i) && (0, s.jsxs)("div", {
-                            className: j()("download-links", eW().links),
-                            children: [t && (0, s.jsx)("a", {
-                                href: t,
-                                target: "_blank",
-                                rel: "noreferrer",
-                                className: eW().appStore,
-                                children: (0, s.jsx)(B(), {
-                                    src: eq,
-                                    alt: "App Store Logo",
-                                    layout: "fill",
-                                    priority: !0
-                                })
-                            }), i && (0, s.jsx)("a", {
-                                href: i,
-                                target: "_blank",
-                                rel: "noreferrer",
-                                className: eW().googlePlay,
-                                children: (0, s.jsx)(B(), {
-                                    src: eK,
-                                    alt: "Google Play Logo",
-                                    layout: "fill",
-                                    priority: !0
-                                })
-                            })]
-                        })
+                        // children: (t || i) && (0, s.jsxs)("div", {
+                        //     className: j()("download-links", eW().links),
+                        //     // <a href="https://telegram.im/@test" target="_blank" class="telegramim_button telegramim_shadow telegramim_pulse" style="font-size:26px;width:322px;background:#ffffff;box-shadow:1px 1px 5px #ffffff;color:#000000;border-radius:50px;" title=""><i></i> VibeAI Platform</a>
+                        //     children: [(0, s.jsx)("a", {
+                        //         href: "https://telegram.im/@test",
+                        //         target: "_blank",
+                        //         // rel: "noreferrer",
+                        //         className: "telegramim_button telegramim_shadow tg_btn",
+                        //         children: [(0, s.jsx)("i", {}), " VibeAI Platform"]
+                        //     })]
+                        // })
                     })
                 }),
                 e$ = (0, C.memo)(e => {

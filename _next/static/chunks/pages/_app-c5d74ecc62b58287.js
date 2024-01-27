@@ -9866,10 +9866,37 @@
                                   children: (0, r.jsx)(m, {})
                               })
                           })
-                      }), (0, r.jsx)("div", {
+                      }),
+                      
+                      
+                      (0, r.jsx)("div", {
+                        className: "header_content_link",
+                      children: [  (0, r.jsx)("a", {
+                            className: "header_link",
+                            href: "https://web.telegram.org/",
+                            children: (0, r.jsx)("img", {
+                                src: '_next/static/media/telegram.png',
+                                className: "header_ico"
+                            })
+
+                        }), (0, r.jsx)("a", {
+                            className: "header_link",
+                            href: "https://twiter.com",
+                            children: (0, r.jsx)("img", {
+                                src: '_next/static/media/twiter.png',
+                                className: "header_ico"
+                            })
+
+                        })]
+                    }),
+                      
+                      
+                      
+                      
+                      (0, r.jsx)("div", {
                           className: "header__buy",
                           children: d && (0, r.jsx)("button", {
-                              className: "btn btn--sm btn--primary",
+                              className: "btn btn--sm btn--primary buy-btn",
                               onClick: () => o(),
                               children: "Buy"
                           })
@@ -10825,46 +10852,55 @@
                           style: {
                               display: "none"
                           }
-                      }), (0, r.jsx)("label", {
+                      }),
+                      
+                      (0, r.jsx)("a", {
                           className: "small-title",
-                          children: "Get news"
-                      }), (0, r.jsxs)("div", {
-                          className: "form-group",
-                          children: [(0, r.jsx)("label", {
-                              className: "sr-only",
-                              htmlFor: "newsletter-email",
-                              children: "Email Address"
-                          }), (0, r.jsx)("input", {
-                              id: "newsletter-email",
-                              name: "email",
-                              type: "email",
-                              inputMode: "email",
-                              autoComplete: "email",
-                              placeholder: "Enter your email address",
-                              className: "form-control",
-                              ...f("email", {
-                                  required: "This field is required.",
-                                  pattern: {
-                                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                                      message: "invalid email address"
-                                  }
-                              })
-                          }), t || u ? (0, r.jsx)("div", {
-                              className: ej().glLoaderNewsletter,
-                              children: (0, r.jsx)(eU.Z, {
-                                  showText: !1
-                              })
-                          }) : (0, r.jsx)("button", {
-                              type: "submit",
-                              children: "submit"
-                          }), (0, r.jsx)("div", {
-                              className: w()("footer-newsletter-form__message", u && "is-visible"),
-                              children: (0, r.jsx)("div", {
-                                  className: "footer-newsletter-form__message-text",
-                                  children: i ? "Thank you for signing up" : "Check your email and try again"
-                              })
-                          })]
-                      })]
+                          children: "help@vibeai.bot",
+                          href: "mailto:help@vibeai.bot"
+                      })
+                      
+                    //   , (0, r.jsxs)("div", {
+                    //       className: "form-group",
+                    //       children: [(0, r.jsx)("label", {
+                    //           className: "sr-only",
+                    //           htmlFor: "newsletter-email",
+                    //           children: "Email Address"
+                    //       }), (0, r.jsx)("input", {
+                    //           id: "newsletter-email",
+                    //           name: "email",
+                    //           type: "email",
+                    //           inputMode: "email",
+                    //           autoComplete: "email",
+                    //           placeholder: "Enter your email address",
+                    //           className: "form-control",
+                    //           ...f("email", {
+                    //               required: "This field is required.",
+                    //               pattern: {
+                    //                   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                    //                   message: "invalid email address"
+                    //               }
+                    //           })
+                    //       }), t || u ? (0, r.jsx)("div", {
+                    //           className: ej().glLoaderNewsletter,
+                    //           children: (0, r.jsx)(eU.Z, {
+                    //               showText: !1
+                    //           })
+                    //       }) : (0, r.jsx)("button", {
+                    //           type: "submit",
+                    //           children: "submit"
+                    //       }), (0, r.jsx)("div", {
+                    //           className: w()("footer-newsletter-form__message", u && "is-visible"),
+                    //           children: (0, r.jsx)("div", {
+                    //               className: "footer-newsletter-form__message-text",
+                    //               children: i ? "Thank you for signing up" : "Check your email and try again"
+                    //           })
+                    //       })]
+                    //   })
+
+
+
+                    ]
                   })
               },
               eN = () => (0, r.jsxs)("svg", {

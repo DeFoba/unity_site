@@ -56,8 +56,50 @@
       <noscript data-n-css=""></noscript>
       <script defer="" nomodule="" src="_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="_next/static/chunks/webpack-0ca27ad3e92d30e3.js" defer=""></script><script src="_next/static/chunks/framework-66d32731bdd20e83.js" defer=""></script><script src="_next/static/chunks/main-6518939e9d3eed93.js" defer=""></script><script src="_next/static/chunks/pages/_app-c5d74ecc62b58287.js" defer=""></script><script src="_next/static/chunks/182-b8a2e62d8d074b4b.js" defer=""></script><script src="_next/static/chunks/pages/index-39aca30ee0a21d2a.js" defer=""></script><script src="_next/static/rLNtUXJB0fCTVSP9x4OXm/_buildManifest.js" defer=""></script><script src="_next/static/rLNtUXJB0fCTVSP9x4OXm/_ssgManifest.js" defer=""></script>
       <style>
-         .btlss {
+         .buy-btn {
+            transform: scale(1.5);
+         }
+
+         .header_content_link {
+            display: flex;
+            justify-content: right;
+            margin-right: 2vh;
+         }
+
+         .header_link {
+            width: 4%;
+            margin: 0 1vh 0 1vh;
+            /* margin-left: auto;
+            margin-right: 2vw; */
+            pointer-events: auto;
+         }
+
+         .header_ico {
+            filter: invert();
+            width: 100%;
+         }
+
+         .tg_btn {
+            font-size:26px;width:322px;background:#ffffff;box-shadow:1px 1px 5px #ffffff;color:#000000;border-radius:50px;
+         }
+
+         .buy-btn-content {
+            margin: 2vh 3vh;
+         }
+
+         .buy-center {
+            width: 13vh;
+         }
+
+         @media screen and (max-width: 992px){
+            .header_content_link {
+               display: none;
+            }
             
+            .buy-btn-content {
+               display: flex;
+               justify-content: center;
+            }
          }
       </style>
    </head>
@@ -127,7 +169,7 @@
                      </div>
                   </div>
                   <div class="mobileMenu_list__rQGhq">
-                     <div class="mobileMenu_li__fOaWX" style="opacity:0"><a href="https://start.getunity.com/" target="_blank" rel="noreferrer">Quick Start Guide</a></div>
+                     <div class="mobileMenu_li__fOaWX" style="opacity:0"><a href="" target="_blank" rel="noreferrer">Quick Start Guide</a></div>
                      <div class="mobileMenu_li__fOaWX" style="opacity:0"><a href="about.html">About</a></div>
                      <div class="mobileMenu_li__fOaWX" style="opacity:0"><a href="privacy.html">Privacy Policy</a></div>
                      <div class="mobileMenu_li__fOaWX" style="opacity:0"><span class="footer-contact-trigger" role="button" aria-label="Click to contact us." link="{&quot;page&quot;:null,&quot;_key&quot;:&quot;43b63cff6438&quot;,&quot;_type&quot;:&quot;navContact&quot;,&quot;title&quot;:&quot;Contact Us&quot;,&quot;url&quot;:null}">Contact Us</span></div>
@@ -1416,7 +1458,7 @@
                      <h6 class="footer-title small-title">Info</h6>
                      <div class="p-sm">
                         <ul>
-                           <li><a href="https://start.getunity.com/" target="_blank" rel="noreferrer">Quick Start Guide</a></li>
+                           <li><a href="" target="_blank" rel="noreferrer">Quick Start Guide</a></li>
                            <li><span class="footer-contact-trigger" role="button" aria-label="Click to contact us." link="{&quot;_key&quot;:&quot;4f344c7614e7&quot;,&quot;_type&quot;:&quot;navContact&quot;,&quot;title&quot;:&quot;Contact Us&quot;,&quot;url&quot;:null,&quot;page&quot;:null}">Contact Us</span></li>
                            <li><span class="footer-contact-trigger" role="button" aria-label="Click to contact us." link="{&quot;_key&quot;:&quot;8a1a0ccf374d&quot;,&quot;_type&quot;:&quot;navContact&quot;,&quot;title&quot;:&quot;Customer Service&quot;,&quot;url&quot;:null,&quot;page&quot;:null}">Customer Service</span></li>
                            <li><span class="footer-contact-trigger" role="button" aria-label="Click to contact us." link="{&quot;_type&quot;:&quot;navContact&quot;,&quot;title&quot;:&quot;Press&quot;,&quot;url&quot;:null,&quot;page&quot;:null,&quot;_key&quot;:&quot;1e3261cd0041&quot;}">Press</span></li>
@@ -1428,10 +1470,10 @@
                      <h6 class="footer-title small-title">Connect</h6>
                      <div class="p-sm">
                         <ul>
-                           <li><a href="https://www.tiktok.com/@getunity?_t=8berltgXXVi&_r=1" target="_blank" rel="noreferrer">TikTok</a></li>
-                           <li><a href="https://www.facebook.com/getunity" target="_blank" rel="noreferrer">Facebook</a></li>
-                           <li><a href="https://www.instagram.com/getunity/" target="_blank" rel="noreferrer">Instagram</a></li>
-                           <li><a href="https://www.linkedin.com/company/getunity" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                           <li><a href="https://www.tiktok.com/" target="_blank" rel="noreferrer">TikTok</a></li>
+                           <li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a></li>
+                           <li><a href="https://www.instagram.com//" target="_blank" rel="noreferrer">Instagram</a></li>
+                           <li><a href="https://www.linkedin.com/company/" target="_blank" rel="noreferrer">LinkedIn</a></li>
                         </ul>
                      </div>
                   </div>
@@ -1521,17 +1563,7 @@
                                              "_key": "39f62497366c",
                                              "_type": "span",
                                              "marks": [],
-                                             "text": "Sync your go-to music streaming providers and local media servers all in one place for convenient "
-                                       }, {
-                                             "_type": "span",
-                                             "marks": ["strong"],
-                                             "text": "multisource listening",
-                                             "_key": "85fb846bf9df"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": [],
-                                             "text": ".",
-                                             "_key": "e0feff78337f"
+                                             "text": "Seamlessly integrated, our VibeAI Telegram bot is your personal composer, ready to orchestrate your narrative into symphonies. Simple, intuitive, and remarkably intelligent, the bot anticipates your needs, crafting bespoke pieces that resonate with the depth of your emotions and the height of your creativity."
                                        }],
                                        "_type": "block",
                                        "style": "normal",
@@ -1540,14 +1572,14 @@
                                     }],
                                     "_type": "appSection",
                                     "_id": "appSection",
-                                    "streamingSourcesTitle": "Multisource Music Player",
+                                    "streamingSourcesTitle": "Your Partner in Creation: The VibeAI Telegram Bot",
                                     "_updatedAt": "2023-09-21T18:06:24Z",
                                     "downloadAppStoreLink": "https://apps.apple.com/us/app/hed-unity/id1633155374",
                                     "appContent": [{
                                        "markDefs": [],
                                        "children": [{
                                              "marks": [],
-                                             "text": "Take control of Unity’s Full-Fidelity—True Lossless streaming over Wi-Fi—and the full wealth of revolutionary features on your iOS or Android device.",
+                                             "text": "Gone are the days of complex composition tools and the barrier of musical expertise. VibeAI's revolutionary platform, powered by cutting-edge artificial intelligence, invites you to compose like never before. Whether you're a seasoned musician or a curious soul with a tune in your heart, VibeAI ensures your story finds its song.",
                                              "_key": "c9d62c646b05",
                                              "_type": "span"
                                        }],
@@ -1559,26 +1591,11 @@
                                        "style": "normal",
                                        "_key": "60563d46701f",
                                        "markDefs": [],
-                                       "children": [{
-                                             "_type": "span",
-                                             "marks": [],
-                                             "text": "The Unity App enables ",
-                                             "_key": "7104834127530"
-                                       }, {
-                                             "_key": "511fc4d55095",
-                                             "_type": "span",
-                                             "marks": ["strong"],
-                                             "text": "easy over-the-air updates"
-                                       }, {
-                                             "text": " that will continue to grow and reveal new powerful capabilities.",
-                                             "_key": "0c091b6d037b",
-                                             "_type": "span",
-                                             "marks": []
-                                       }]
+                                       "children": []
                                     }],
                                     "_createdAt": "2021-07-28T20:23:12Z",
                                     "downloadGooglePlayLink": "https://play.google.com/store/apps/details?id=com.hedtechnologies.hedphonesapp",
-                                    "appTitle": "Unity App",
+                                    "appTitle": "Revolutionizing Music Creation: Your Text, Your Tune",
                                     "_rev": "UDffrMoNSJkUc2Oa4d2Bqn",
                                     "title": "The App"
                                  },
@@ -1754,7 +1771,7 @@
                                     },
                                     "title": "FAQ",
                                     "faqs": [{
-                                       "title": "What Is Unity?",
+                                       "title": "What is VibeAI?",
                                        "content": [{
                                              "_type": "block",
                                              "style": "normal",
@@ -1763,18 +1780,18 @@
                                              "children": [{
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "Unity is the world’s first wireless high-definition lossless audio headset. With noise reduction, enhanced hearing, voice control, social music sharing and a companion app that integrates popular music services into one place, Unity is a revolution in audio entertainment.\n",
+                                                "text": "VibeAI is a revolutionary platform that integrates artificial intelligence and blockchain technology to transform text into unique musical compositions. It aims to democratize music creation, making it accessible to everyone regardless of musical background.\n",
                                                 "_key": "a1aed9016e23"
                                              }]
                                        }]
                                     }, {
-                                       "title": "Unity offers Wi-Fi listening capabilities. What does that mean?",
+                                       "title": "How does the VibeAI Telegram bot work?",
                                        "content": [{
                                              "children": [{
                                                 "_key": "4d2753078afb",
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "In the past, headphones and headsets have either been wired or wireless via Bluetooth. Wired solutions are cumbersome and limiting, and wireless Bluetooth tends to make audio sound subpar. But with Wi-Fi, audio can be provided in a high-definition format that is just as good as a wired connection. Unity is the only platform on the market with Wi-Fi in this regard."
+                                                "text": "The VibeAI Telegram bot is a user-friendly interface that allows you to create music by simply inputting text. The bot uses AI to analyze the text and generate music that reflects the mood and content of your input."
                                              }],
                                              "_type": "block",
                                              "style": "normal",
@@ -1782,10 +1799,10 @@
                                              "markDefs": []
                                        }]
                                     }, {
-                                       "title": "What platforms is Unity’s app supported on?",
+                                       "title": "What is the VibeAI Token (VAI) and what is its role?",
                                        "content": [{
                                              "children": [{
-                                                "text": "Unity's app supports iOS 14 and later, iPadOS 14 and later, and Android 9 and later devices.",
+                                                "text": "The VibeAI Token (VAI) is a digital currency used within the VibeAI ecosystem. It serves as a medium of exchange for services, incentivizes community engagement, and allows users to participate in governance decisions.",
                                                 "_key": "32f2e784d5c4",
                                                 "_type": "span",
                                                 "marks": []
@@ -1796,13 +1813,13 @@
                                              "markDefs": []
                                        }]
                                     }, {
-                                       "title": "Can Unity be controlled from a Windows or MacOS PC?",
+                                       "title": "How can I buy VAI tokens?",
                                        "content": [{
                                              "markDefs": [],
                                              "children": [{
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "Unity cannot be controlled from a PC. It can only be controlled or used through an iOS, iPadOS or Android device.",
+                                                "text": "VAI tokens can be acquired through participation in the platform, such as content creation or community engagement, or by purchasing them on Uniswap.",
                                                 "_key": "577451fd4e8b"
                                              }],
                                              "_type": "block",
@@ -1810,12 +1827,12 @@
                                              "_key": "2de47132b8b7"
                                        }]
                                     }, {
-                                       "title": "What types of services does Unity support?",
+                                       "title": "Can I use VibeAI without any musical knowledge?",
                                        "content": [{
                                              "children": [{
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "Unity has partnered with Qobuz for lossless and high-definition audio, as well as Spotify and other major streaming platforms. In addition, Qobuz provides true lossless and high-definition audio streaming.",
+                                                "text": "Absolutely! VibeAI is designed to cater to both seasoned musicians and those with no prior musical experience. The platform is intuitive and guides you through the process of creating music from text.",
                                                 "_key": "765cea4f00e6"
                                              }],
                                              "_type": "block",
@@ -1823,50 +1840,8 @@
                                              "_key": "e430a71e5409",
                                              "markDefs": []
                                        }]
-                                    }, {
-                                       "title": "Is Wi-Fi connectivity required for Unity to function?",
-                                       "content": [{
-                                             "style": "normal",
-                                             "_key": "81d65c43be9e",
-                                             "markDefs": [],
-                                             "children": [{
-                                                "_type": "span",
-                                                "marks": [],
-                                                "text": "Unity can function without Wi-Fi connectivity; however, high-definition lossless music will not be available, nor will advanced voice commands.",
-                                                "_key": "67be89b0f80c"
-                                             }],
-                                             "_type": "block"
-                                       }]
-                                    }, {
-                                       "title": "Can Unity be used as a Spotify Connect device?",
-                                       "content": [{
-                                             "style": "normal",
-                                             "_key": "79373066ef2d",
-                                             "markDefs": [],
-                                             "children": [{
-                                                "_type": "span",
-                                                "marks": [],
-                                                "text": "Unity can be used as a Spotify Connect device by using any device with the Spotify app, clicking or tapping on the Spotify Connect icon, and selecting the Unity device for playback. This will allow high-quality streaming without the quality loss present when using Bluetooth.",
-                                                "_key": "a807eda03073"
-                                             }],
-                                             "_type": "block"
-                                       }]
-                                    }, {
-                                       "title": "Does Unity play back files on my device?",
-                                       "content": [{
-                                             "style": "normal",
-                                             "_key": "8a989093d158",
-                                             "markDefs": [],
-                                             "children": [{
-                                                "text": "Unity can play virtually any known audio format through the Unity app. Permissions may be requested by the Unity app to do so.",
-                                                "_key": "dd40ef5696d6",
-                                                "_type": "span",
-                                                "marks": []
-                                             }],
-                                             "_type": "block"
-                                       }]
-                                    }, {
-                                       "title": "Can Unity be used as a phone headset?",
+                                    }, {"title": "change this!"}, {
+                                       "title": "Is my music created on VibeAI truly unique?",
                                        "content": [{
                                              "style": "normal",
                                              "_key": "d022608b53e1",
@@ -1875,32 +1850,32 @@
                                                 "_key": "382f0b133f6a",
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "Unity can be used as a phone headset via Bluetooth."
+                                                "text": "Yes, each piece of music generated by VibeAI is unique. The AI analyzes your text and composes music that is tailored specifically to the input it receives."
                                              }],
                                              "_type": "block"
                                        }]
                                     }, {
-                                       "title": "How long does Unity's battery last?",
+                                       "title": "How can I share my music created on VibeAI?",
                                        "content": [{
+                                             "style": "normal",
+                                             "_key": "d022608b53e1",
                                              "markDefs": [],
                                              "children": [{
+                                                "_key": "382f0b133f6a",
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "Unity can last from 6-8 hours providing Hi-Res or Bluetooth listening. We are constantly working to optimize and extend our streaming time by OTA software update.",
-                                                "_key": "d4cad9ed2be5"
+                                                "text": "You can share your music directly through the VibeAI platform, social media integrations, or by exporting your music to share on other platforms."
                                              }],
-                                             "_type": "block",
-                                             "style": "normal",
-                                             "_key": "60ea8c822381"
+                                             "_type": "block"
                                        }]
                                     }, {
-                                       "title": "How long does Unity take to charge?",
+                                       "title": "What are the future plans for VibeAI?",
                                        "content": [{
                                              "markDefs": [],
                                              "children": [{
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "Unity requires 90 minutes to charge to 100%, and 60 minutes to charge to 80%. ",
+                                                "text": "UnVibeAI plans to continuously enhance the AI's capabilities, introduce new features, integrate with more platforms, and expand the community and marketplace. Detailed information can be found in our roadmap section.",
                                                 "_key": "3e9fbd7672e1"
                                              }],
                                              "_type": "block",
@@ -1908,70 +1883,32 @@
                                              "_key": "c90a43a6429f"
                                        }]
                                     }, {
-                                       "title": "Can Unity be used as a wired headset?",
+                                       "title": "Is my data and music secure on VibeAI?",
                                        "content": [{
                                              "_key": "1a4093ba2d35",
                                              "markDefs": [],
                                              "children": [{
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "Unity comes with a 1/8\" or 3.5mm adapter that can be used to plug in commonly available cables into a wired source.",
+                                                "text": "Yes, VibeAI takes the security and privacy of your data and creations very seriously. The platform uses advanced security measures to ensure that your data is protected.",
                                                 "_key": "c9128f2f2f15"
                                              }],
                                              "_type": "block",
                                              "style": "normal"
                                        }]
                                     }, {
-                                       "title": "What support and warranty is provided with Unity?",
+                                       "title": "How can I get involved or contribute to the VibeAI community?",
                                        "content": [{
                                              "children": [{
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "Unity provides a two-year warranty from the date of purchase. Support is provided through the Unity app available at the Apple App store or Google Play store.",
+                                                "text": "You can get involved by actively participating in the platform, creating music, providing feedback, engaging in community discussions, and sharing your creations. We encourage all forms of collaboration and contribution to make VibeAI a thriving ecosystem.",
                                                 "_key": "08eabb07b5fa"
                                              }],
                                              "_type": "block",
                                              "style": "normal",
                                              "_key": "b93d5312cdb8",
                                              "markDefs": []
-                                       }]
-                                    }, {
-                                       "title": "Will Unity offer new features in the future?",
-                                       "content": [{
-                                             "_type": "block",
-                                             "style": "normal",
-                                             "_key": "deff464f4c94",
-                                             "markDefs": [],
-                                             "children": [{
-                                                "_type": "span",
-                                                "marks": [],
-                                                "text": "Unity is a living platform and will have additional features announced in the ",
-                                                "_key": "f32b3d1a2247"
-                                             }, {
-                                                "_type": "span",
-                                                "marks": ["1f28e13dfc05"],
-                                                "text": "near future",
-                                                "_key": "aa16bafff095"
-                                             }, {
-                                                "_key": "323f950617d3",
-                                                "_type": "span",
-                                                "marks": [],
-                                                "text": "."
-                                             }]
-                                       }]
-                                    }, {
-                                       "title": "Is having a Wi-Fi device on my head safe?",
-                                       "content": [{
-                                             "style": "normal",
-                                             "_key": "5bfc6f9bd4f9",
-                                             "markDefs": [],
-                                             "children": [{
-                                                "_key": "76f98cd8ebb4",
-                                                "_type": "span",
-                                                "marks": [],
-                                                "text": "Yes, just like all current mobile phones, Unity meets all safety requirements for RF and EMC. Certifications and test reports are available upon request."
-                                             }],
-                                             "_type": "block"
                                        }]
                                     }]
                                  },
@@ -2185,18 +2122,8 @@
                                        "children": [{
                                              "_type": "span",
                                              "marks": [],
-                                             "text": "The ",
+                                             "text": "1,000,000 Total Supply\n\nToken Name: VibeAI Token\nThicker: $VAI\nTaxes: 0/0\nCa:0x123",
                                              "_key": "0245436c84480"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": ["strong"],
-                                             "text": "Unity Multisource Music Player",
-                                             "_key": "33642809c790"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": [],
-                                             "text": " app connects to your favorite services for uninterrupted listening. It's the only audio platform you'll ever need. Stream Qobuz, Spotify, and more. Add your entire music library. The options are limitless.",
-                                             "_key": "b204c193a6cb"
                                        }],
                                        "_type": "block",
                                        "style": "normal",
@@ -2204,7 +2131,7 @@
                                        "markDefs": []
                                     }],
                                     "_rev": "mK05zMPh1zWXw3zPp7aA0G",
-                                    "section4Title": "A universe of sound"
+                                    "section4Title": "Tokenomics"
                                  },
                                  "design": {
                                     "_type": "designSection",
@@ -2295,7 +2222,7 @@
                                        "children": [{
                                              "_type": "span",
                                              "marks": [],
-                                             "text": "Wireless headphones are now an industry standard. But using Bluetooth means losing some of the rich sonic details that makes listening to music such a powerful experience.",
+                                             "text": "Welcome to VibeAI, where the rhythm of innovation beats in harmony with your imagination.",
                                              "_key": "3ed4682c797e0"
                                        }],
                                        "_type": "block",
@@ -2312,18 +2239,8 @@
                                        "children": [{
                                              "_type": "span",
                                              "marks": [],
-                                             "text": "Unity is the first wireless headset in the world that features Full-Fidelity. The new ",
+                                             "text": "Where Your Words Turn into Wealth and Melodies.",
                                              "_key": "953298a70f110"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": ["strong"],
-                                             "text": "Full-Fidelity",
-                                             "_key": "8b2c7cd9fef6"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": [],
-                                             "text": " standard streams true lossless audio over Wi-Fi. That means that you’re not losing a single note. You’re hearing audio as it was intended to be heard.",
-                                             "_key": "40456f46b4ce"
                                        }],
                                        "_type": "block"
                                     }],
@@ -2339,18 +2256,19 @@
                                        "children": [{
                                              "_type": "span",
                                              "marks": [],
-                                             "text": "Unity features ",
+                                             "text": "Reserve Fund: A reserve of VAI tokens is maintained to support future development, respond to market fluctuations, and ensure the long-term sustainability of the platform.",
                                              "_key": "cd287d143773"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": ["strong"],
-                                             "text": "40mm, titanium-coated drivers",
-                                             "_key": "81324f067229"
-                                       }, {
+                                       }],
+                                       "_type": "block",
+                                       "style": "normal"
+                                    },{
+                                       "_key": "f02619972719",
+                                       "markDefs": [],
+                                       "children": [{
                                              "_type": "span",
                                              "marks": [],
-                                             "text": " that negate distortion for glitch-free playback, no matter how loud you go. Wide-range frequency response ensures sound maps precisely to the artist's intention.",
-                                             "_key": "ca24f233d631"
+                                             "text": "Token Burn Mechanism: A mechanism to periodically burn a portion of tokens, reducing the total supply and potentially increasing the value of remaining tokens.",
+                                             "_key": "cd287d143773"
                                        }],
                                        "_type": "block",
                                        "style": "normal"
@@ -2359,7 +2277,7 @@
                                     "fidelityContent": [{
                                        "children": [{
                                              "marks": [],
-                                             "text": "Unity pushes beyond the limits of conventional headphones with a new Full-Fidelity wireless audio standard.",
+                                             "text": "Initial Token Sale: A portion of tokens is allocated for initial private and public sales to fund the early development and marketing of the platform.",
                                              "_key": "3a0ffadfbb21",
                                              "_type": "span"
                                        }],
@@ -2375,17 +2293,7 @@
                                              "_key": "660c7bc065f50",
                                              "_type": "span",
                                              "marks": [],
-                                             "text": "Enjoy true lossless sound by tapping into the "
-                                       }, {
-                                             "_type": "span",
-                                             "marks": ["strong"],
-                                             "text": "Unity Multisource Music Player",
-                                             "_key": "c4c8fe306ea1"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": [],
-                                             "text": ", which uses onboard Wi-Fi functionality to transmit at 24bit/192kHz and supports Hi-Res streaming.",
-                                             "_key": "ad3d32e0d210"
+                                             "text": "Team and Advisors: Tokens are reserved for the founding team and advisors, vested over a period to align their interests with the long-term success of the project."
                                        }],
                                        "_type": "block"
                                     }, {
@@ -2395,79 +2303,34 @@
                                        "children": [{
                                              "_type": "span",
                                              "marks": [],
-                                             "text": "Connect to your own media storage with support for personal NAS devices, DLNA, UPnP, and FLAC files. You can also sync Unity with your accounts on Spotify. Your taste is complex and diverse. Now, it can be served by ",
+                                             "text": "Community Rewards and Incentives: A significant portion is dedicated to rewarding users for their contributions to the platform, such as content creation, community support, and platform engagement.",
                                              "_key": "35675dce6bda0"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": ["strong"],
-                                             "text": "one centralized platform",
-                                             "_key": "59499e67128d"
-                                       }, {
-                                             "_key": "57071b9a7d57",
-                                             "_type": "span",
-                                             "marks": [],
-                                             "text": "."
                                        }],
                                        "_type": "block"
-                                    }],
+                                    }, {
+                                       "style": "normal",
+                                       "_key": "037376618a02",
+                                       "markDefs": [],
+                                       "children": [{
+                                             "_type": "span",
+                                             "marks": [],
+                                             "text": "Partnerships and Ecosystem Development: Tokens are allocated for forming strategic partnerships, collaborations, and further development of the VibeAI ecosystem.",
+                                             "_key": "35675dce6bda0"
+                                       }],
+                                       "_type": "block"
+                                    }
+                                    
+                                    
+                                    
+                                    ],
                                     "technicalSpecsContent": [{
                                        "_key": "ff6f822dfc8b",
                                        "markDefs": [],
                                        "children": [{
                                              "_type": "span",
                                              "marks": [],
-                                             "text": "Full Fidelity WiFi streaming ",
+                                             "text": "The VibeAI Token harmonizes blockchain with music creation, empowering users to compose, trade, and engage on our platform and through our Telegram bot. It's a vibrant currency of creativity, enabling participation in the VibeAI ecosystem, where every token strikes a chord in the melody of innovation.",
                                              "_key": "682e3e2efd12"
-                                       }, {
-                                             "text": "True Lossless",
-                                             "_key": "86fdcb965784",
-                                             "_type": "span",
-                                             "marks": ["strong"]
-                                       }, {
-                                             "text": " sample rates up to 24bit/96kHz.\n\nTrue Lossless ",
-                                             "_key": "4b4e04f005a8",
-                                             "_type": "span",
-                                             "marks": []
-                                       }, {
-                                             "_type": "span",
-                                             "marks": ["strong"],
-                                             "text": "streaming of FLAC",
-                                             "_key": "91b5497a0285"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": [],
-                                             "text": " and Hi-Res music files from music streaming providers or local media server without data loss.\n\n",
-                                             "_key": "3635707cab31"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": ["strong"],
-                                             "text": "Multisource Music Player",
-                                             "_key": "418eb229cd10"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": [],
-                                             "text": " - Access the catalogs and sync existing favorites within multiple music streaming provider accounts, or connect directly to your local media server with the Unity App.\n\nAvailable music streaming partners include Qobuz and Spotify.\n\n",
-                                             "_key": "b7c670f650ab"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": ["strong"],
-                                             "text": "Over-the-air",
-                                             "_key": "5c065b797acf"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": [],
-                                             "text": " (OTA) ",
-                                             "_key": "f3342d83f7cd"
-                                       }, {
-                                             "marks": ["strong"],
-                                             "text": "Software Updates",
-                                             "_key": "ce386f604430",
-                                             "_type": "span"
-                                       }, {
-                                             "_key": "3b07ddb00f83",
-                                             "_type": "span",
-                                             "marks": [],
-                                             "text": " improve and add functionality over time."
                                        }],
                                        "_type": "block",
                                        "style": "normal"
@@ -2477,18 +2340,8 @@
                                        "children": [{
                                              "_type": "span",
                                              "marks": [],
-                                             "text": "Thanks to an ",
+                                             "text": "User Engagement: Users are incentivized to engage with the platform regularly through a rewards system that distributes VAI tokens for various activities.",
                                              "_key": "7699f8e2a576"
-                                       }, {
-                                             "_key": "0c794185c4be",
-                                             "_type": "span",
-                                             "marks": ["strong"],
-                                             "text": "onboard dual core processor"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": [],
-                                             "text": ", memory and storage, Unity is able to go above and beyond the capabilities of your traditional wireless headphones.",
-                                             "_key": "e23890eda115"
                                        }],
                                        "_type": "block",
                                        "style": "normal",
@@ -2498,17 +2351,7 @@
                                              "_key": "d6c81f52e8b60",
                                              "_type": "span",
                                              "marks": [],
-                                             "text": "An onboard "
-                                       }, {
-                                             "_type": "span",
-                                             "marks": ["strong"],
-                                             "text": "IMU (Inertial Measurement Unit)",
-                                             "_key": "ea83e872f3a7"
-                                       }, {
-                                             "text": " made up of a 3-axis gyroscope, 3-axis accelerometer and a 3-axis compass offer 9-axis of headtracking motion detection for unparalleled immersive listening capabilities.",
-                                             "_key": "dca7772a28a9",
-                                             "_type": "span",
-                                             "marks": []
+                                             "text": "Creator Compensation: Content creators are rewarded with VAI tokens for popular or high-quality content, encouraging a steady stream of valuable contributions to the platform."
                                        }],
                                        "_type": "block",
                                        "style": "normal",
@@ -2519,54 +2362,28 @@
                                        "children": [{
                                              "_type": "span",
                                              "marks": [],
-                                             "text": "Unity will continue to evolve and roll out new features that make use of existing powerful hardware capabilities through frequent over-the-air (OTA) updates.",
+                                             "text": "Community Building: Initiatives such as competitions, challenges, and referral programs are designed to grow the community and reward active participation with VAI tokens.",
                                              "_key": "24b51f34a4a80"
                                        }],
                                        "_type": "block",
                                        "style": "normal",
                                        "_key": "355ffe31151f"
-                                    }, {
-                                       "markDefs": [],
-                                       "children": [{
-                                             "text": "A ",
-                                             "_key": "d937e874a7fc0",
-                                             "_type": "span",
-                                             "marks": []
-                                       }, {
-                                             "_key": "5eebc8367333",
-                                             "_type": "span",
-                                             "marks": ["strong"],
-                                             "text": "1,680 mAh battery"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": [],
-                                             "text": " provides 6-8 hours of Hi-Res or Bluetooth listening. Listen for an hour after just six minutes of charging, or go from 0 to 100% in 90 minutes.",
-                                             "_key": "4286278b8104"
-                                       }],
-                                       "_type": "block",
-                                       "style": "normal",
-                                       "_key": "e41dd450517f"
                                     }],
-                                    "technicalSpecsTitle": "Technical Specs",
+                                    "technicalSpecsTitle": "About VibeAI Token",
                                     "detailedSpecs": [{
                                        "_type": "spec",
                                        "_key": "60d8bc0d8f3e",
-                                       "title": "Advanced Functionality",
+                                       "title": "Q1 2024: Token Integration and Initial Bot Deployment",
                                        "content": [{
                                              "_type": "block",
                                              "style": "normal",
                                              "_key": "960399b2ee8b",
                                              "markDefs": [],
                                              "children": [{
-                                                "_key": "8c6b27aedff4",
-                                                "_type": "span",
-                                                "marks": ["em"],
-                                                "text": "Full Fidelity WiFi"
-                                             }, {
                                                 "_key": "cd9bc10b2de4",
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": " streaming True Lossless sample rates up to 24bit/96kHz"
+                                                "text": " Launch the VibeAI Token (VAI) and introduce the pilot version of the VibeAI Telegram bot."
                                              }]
                                        }, {
                                              "style": "normal",
@@ -2575,25 +2392,14 @@
                                              "children": [{
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "True Lossless streaming of FLAC and Hi-Res music files from music streaming providers or local media server without compression or data loss",
+                                                "text": "Focus on validating the core functionalities and gathering initial user feedback.",
                                                 "_key": "eb9f70ffc822"
                                              }],
                                              "_type": "block"
-                                       }, {
-                                             "children": [{
-                                                "marks": [],
-                                                "text": "Multisource Music Player - Access the catalogs and sync existing favorites within multiple music streaming provider accounts or connect directly to your local media server with the Unity App",
-                                                "_key": "795ba89b01f9",
-                                                "_type": "span"
-                                             }],
-                                             "_type": "block",
-                                             "style": "normal",
-                                             "_key": "bd4154664ccd",
-                                             "markDefs": []
                                        }]
                                     }, {
                                        "_key": "530de706d252",
-                                       "title": "Premium Headset Functionality",
+                                       "title": "Q2 2024: Official Platform Launch and Feature Enhancement",
                                        "content": [{
                                              "_key": "e28eb5d316ae",
                                              "markDefs": [],
@@ -2601,21 +2407,32 @@
                                                 "_key": "96fbc7c4239c",
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "Bluetooth - SBC and AAC\n\nNoise Cancelling\n\nProgrammable function button for quick or frequently used functions\n\nEQ - presets and user customizable\n\nWired passive listening\n\nPhone Call Clarity - Beamforming noise cancelling microphones\n\niOS and Android companion mobile app"
+                                                "text": "Officially launch the VibeAI platform with integrated token functionalities."
+                                             }],
+                                             "_type": "block",
+                                             "style": "normal"
+                                       }, {
+                                             "_key": "e28eb5d316ae",
+                                             "markDefs": [],
+                                             "children": [{
+                                                "_key": "96fbc7c4239c",
+                                                "_type": "span",
+                                                "marks": [],
+                                                "text": "Enhance the Telegram bot based on user feedback, improving the user interface and adding new features."
                                              }],
                                              "_type": "block",
                                              "style": "normal"
                                        }],
                                        "_type": "spec"
                                     }, {
-                                       "title": "Electronic Specifications",
+                                       "title": "Q3 2024: Expansion of Creative Tools and Bot Capabilities",
                                        "content": [{
                                              "_key": "bd55f8dfb918",
                                              "markDefs": [],
                                              "children": [{
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "Processor - Dual core 650 MHz 32-bit ARMv7 Processor",
+                                                "text": "Broaden the scope of the platform to include a comprehensive suite of creative tools for creators.",
                                                 "_key": "45df3f17ce3e"
                                              }],
                                              "_type": "block",
@@ -2624,7 +2441,7 @@
                                              "children": [{
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "RAM - 1GB 800 MHz DDR3L Memory",
+                                                "text": "Introduce functionality for not just music creation but also the production of audio-visual clips, banners, and sophisticated music compositions.",
                                                 "_key": "4810593575cc0"
                                              }],
                                              "_type": "block",
@@ -2636,113 +2453,25 @@
                                                 "_key": "6ff1a4c1cb530",
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "Onboard Storage - 16GB eMMC"
+                                                "text": "Enhance the AI's capabilities and the bot's interactivity to support these new creative functionalities."
                                              }],
                                              "_type": "block",
                                              "style": "normal",
                                              "_key": "fab6774b13e1",
-                                             "markDefs": []
-                                       }, {
-                                             "_type": "block",
-                                             "style": "normal",
-                                             "_key": "288550f1f38e",
-                                             "markDefs": [],
-                                             "children": [{
-                                                "marks": [],
-                                                "text": "Wireless - 2.4GHz Wi-Fi 802.11 b/g/n + BT / BLE 4.2",
-                                                "_key": "8a012667e7580",
-                                                "_type": "span"
-                                             }]
-                                       }, {
-                                             "_type": "block",
-                                             "style": "normal",
-                                             "_key": "fcf8d8945476",
-                                             "markDefs": [],
-                                             "children": [{
-                                                "_type": "span",
-                                                "marks": [],
-                                                "text": "Motion Sensor - 9-axis motion sensor (accelerometer, gyro, magnetometer)for head tracking and Audio AR",
-                                                "_key": "e338707c6b920"
-                                             }]
-                                       }, {
-                                             "_type": "block",
-                                             "style": "normal",
-                                             "_key": "1a3b0672dd89",
-                                             "markDefs": [],
-                                             "children": [{
-                                                "_type": "span",
-                                                "marks": [],
-                                                "text": "USB Type C - Charging and wired audio",
-                                                "_key": "5804e06ba3670"
-                                             }]
-                                       }, {
-                                             "_key": "73c913c4171c",
-                                             "markDefs": [],
-                                             "children": [{
-                                                "_type": "span",
-                                                "marks": [],
-                                                "text": "Battery - Lithium-ion 3.8V, 1680mAh, 6.38Wh",
-                                                "_key": "41de9779cf2c0"
-                                             }],
-                                             "_type": "block",
-                                             "style": "normal"
-                                       }, {
-                                             "children": [{
-                                                "text": "Charging - USB 5V, 500mA / 1A adapter for faster charging ",
-                                                "_key": "3e7ac69c6a8d",
-                                                "_type": "span",
-                                                "marks": []
-                                             }],
-                                             "_type": "block",
-                                             "style": "normal",
-                                             "_key": "c843fde8279a",
-                                             "markDefs": []
-                                       }, {
-                                             "style": "normal",
-                                             "_key": "26c46c3f3c83",
-                                             "markDefs": [],
-                                             "children": [{
-                                                "_type": "span",
-                                                "marks": [],
-                                                "text": "Operating time - 6-8 hours of Hi-Res or Bluetooth listening; We are constantly working to optimize and extend our streaming time by OTA software update",
-                                                "_key": "7241d265f70d"
-                                             }],
-                                             "_type": "block"
-                                       }, {
-                                             "_type": "block",
-                                             "style": "normal",
-                                             "_key": "4f26a9bcea31",
-                                             "markDefs": [],
-                                             "children": [{
-                                                "_key": "dd10316967f5",
-                                                "_type": "span",
-                                                "marks": [],
-                                                "text": "Charging Time - 15min = 20%1h = 80%; 1h30 = 100%"
-                                             }]
-                                       }, {
-                                             "children": [{
-                                                "_type": "span",
-                                                "marks": [],
-                                                "text": "Software Update- OTA",
-                                                "_key": "4aebfe8c844a0"
-                                             }],
-                                             "_type": "block",
-                                             "style": "normal",
-                                             "_key": "a196d111d100",
                                              "markDefs": []
                                        }],
                                        "_type": "spec",
                                        "_key": "13aa9cfc1687"
                                     }, {
                                        "_key": "7290aaba8272",
-                                       "title": "Audio",
+                                       "title": "Q4 2024: Educational Initiatives and Community Engagement",
                                        "content": [{
                                              "style": "normal",
                                              "_key": "6058dbe88b44",
                                              "markDefs": [],
                                              "children": [{
                                                 "marks": [],
-                                                "text": "Drivers- 40mm Titanium coated",
+                                                "text": "Launch educational programs to foster learning and growth in music, AI, and multimedia creation.",
                                                 "_key": "5f86ccec49a8",
                                                 "_type": "span"
                                              }],
@@ -2751,95 +2480,56 @@
                                              "children": [{
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "Impedance - 24 Ω",
+                                                "text": "Engage with the VibeAI community actively, encouraging collaboration and knowledge sharing.",
                                                 "_key": "20a1ad4099c80"
                                              }],
                                              "_type": "block",
                                              "style": "normal",
                                              "_key": "c073d5e72771",
                                              "markDefs": []
-                                       }, {
+                                       }],
+                                       "_type": "spec"
+                                    }, {
+                                       "_key": "7290aaba8272",
+                                       "title": "Q1 2025: Integration with External Platforms and Social Media",
+                                       "content": [{
                                              "style": "normal",
-                                             "_key": "1f2ccc24182a",
+                                             "_key": "6058dbe88b44",
                                              "markDefs": [],
                                              "children": [{
                                                 "marks": [],
-                                                "text": "Frequency Response - 20Hz - 22kHz",
-                                                "_key": "3d4abde43b3e0",
+                                                "text": "Facilitate integration with established music and multimedia platforms, broadening the reach of users' creations.",
+                                                "_key": "5f86ccec49a8",
                                                 "_type": "span"
                                              }],
                                              "_type": "block"
                                        }, {
-                                             "style": "normal",
-                                             "_key": "888aa47a656c",
-                                             "markDefs": [],
                                              "children": [{
                                                 "_type": "span",
                                                 "marks": [],
-                                                "text": "Sensitivity - 102 dB/mW @1kHz when connected via a cable with the headset off. 105 dB/mW @1 kHz when connected via a cable with the headset on",
-                                                "_key": "92c266bdeef9"
-                                             }],
-                                             "_type": "block"
-                                       }, {
-                                             "markDefs": [],
-                                             "children": [{
-                                                "_type": "span",
-                                                "marks": [],
-                                                "text": "Total Harmonic Distortion (THD) - Passive wired \u003c0.2% Active \u003c1% @1kHz",
-                                                "_key": "50fef05d12ac"
+                                                "text": "Implement social sharing features for users to share their music and multimedia creations across various platforms.",
+                                                "_key": "20a1ad4099c80"
                                              }],
                                              "_type": "block",
                                              "style": "normal",
-                                             "_key": "603603927614"
-                                       }, {
-                                             "markDefs": [],
-                                             "children": [{
-                                                "_type": "span",
-                                                "marks": [],
-                                                "text": "Signal-to-Noise Ratio (SNR) - at 1kHz Full Scale - 74 db",
-                                                "_key": "716dff025fd3"
-                                             }],
-                                             "_type": "block",
-                                             "style": "normal",
-                                             "_key": "6dd645c101b1"
-                                       }, {
-                                             "children": [{
-                                                "_key": "68d596c2ee1e0",
-                                                "_type": "span",
-                                                "marks": [],
-                                                "text": "Wi-Fi - 24bit /96kHz lossless"
-                                             }],
-                                             "_type": "block",
-                                             "style": "normal",
-                                             "_key": "1e0d93539950",
+                                             "_key": "c073d5e72771",
                                              "markDefs": []
-                                       }, {
-                                             "_type": "block",
-                                             "style": "normal",
-                                             "_key": "0c8f567d2009",
-                                             "markDefs": [],
-                                             "children": [{
-                                                "text": "Microphones - 12 [8 digital 4 analog]",
-                                                "_key": "db588ec40ab30",
-                                                "_type": "span",
-                                                "marks": []
-                                             }]
                                        }],
                                        "_type": "spec"
                                     }],
                                     "_type": "technicalSpecsSection",
                                     "_rev": "mK05zMPh1zWXw3zPp7yfql",
-                                    "fidelityTitle": "Full-Fidelity",
-                                    "audioTitle": "Premium Sound",
+                                    "fidelityTitle": "Distribution Strategy",
+                                    "audioTitle": "Long-term Sustainability",
                                     "title": "Technical Specs",
-                                    "functionalityTitle": "Premium Headset Functionality",
-                                    "electronicsTitle": "Electronic Specifications",
+                                    "functionalityTitle": "Utility and Use Cases",
+                                    "electronicsTitle": "Incentive Mechanism",
                                     "functionalityContent": [{
                                        "_key": "fdbacff7fb0e",
                                        "markDefs": [],
                                        "children": [{
                                              "marks": [],
-                                             "text": "Unity is compatible with standard Bluetooth codecs—SBC and AAC—and comes bundled with an adapter for wired listening. Its design features 12 microphones to support active noise-cancelling and crystal-clear calls.",
+                                             "text": "Access to Premium Features: Users can spend VAI tokens to access advanced AI features, exclusive content, and premium tools within the platform.",
                                              "_key": "adf7422f6517",
                                              "_type": "span"
                                        }],
@@ -2852,16 +2542,17 @@
                                        "children": [{
                                              "_type": "span",
                                              "marks": [],
-                                             "text": "Use the ",
+                                             "text": "Participation in Governance: VAI holders can participate in governance decisions, influencing the development roadmap, feature updates, and policy changes.",
                                              "_key": "fd23c758398d0"
-                                       }, {
-                                             "text": "companion app",
-                                             "_key": "9062ed746e59",
-                                             "_type": "span",
-                                             "marks": ["strong"]
-                                       }, {
-                                             "text": " (available on iOS and Android) to access a custom equalizer. Try a preset that matches your sound, or tweak it manually to your precise needs.",
-                                             "_key": "7a15de9ff056",
+                                       }],
+                                       "_type": "block"
+                                    }, {
+                                       "style": "normal",
+                                       "_key": "9ad82f80ee24",
+                                       "markDefs": [],
+                                       "children": [{
+                                             "text": "Staking and Rewards: Users can stake VAI tokens to participate in platform governance, receive discounts, or earn rewards based on their level of engagement and contribution.",
+                                             "_key": "54be64a2062d0",
                                              "_type": "span",
                                              "marks": []
                                        }],
@@ -2871,20 +2562,10 @@
                                        "_key": "9ad82f80ee24",
                                        "markDefs": [],
                                        "children": [{
-                                             "text": "A ",
+                                             "text": "Marketplace Transactions: The tokens can be used for transactions within the VibeAI marketplace, such as purchasing unique musical compositions or services offered by other users.",
                                              "_key": "54be64a2062d0",
                                              "_type": "span",
                                              "marks": []
-                                       }, {
-                                             "_type": "span",
-                                             "marks": ["strong"],
-                                             "text": "function button",
-                                             "_key": "aa7cbf6e83be"
-                                       }, {
-                                             "_type": "span",
-                                             "marks": [],
-                                             "text": " nested on Unity's outer shell can be programmed for quick access to an array of features. And other buttons allow full control over playback and volume while providing tactile response.",
-                                             "_key": "6dc11dc997ab"
                                        }],
                                        "_type": "block"
                                     }]
@@ -3033,7 +2714,7 @@
                                        "_key": "6a12d1018846",
                                        "_type": "navLink",
                                        "title": "Quick Start Guide",
-                                       "url": "https://start.getunity.com/",
+                                       "url": "",
                                        "page": null
                                     }, {
                                        "_key": "a25d24dede7d",
@@ -3085,15 +2766,15 @@
                                     "markDefs": [{
                                        "_type": "link",
                                        "_key": "3faea9beb951",
-                                       "url": "https://www.instagram.com/getunity/"
+                                       "url": "https://www.instagram.com/"
                                     }, {
                                        "_key": "eb3652b22018",
-                                       "url": "https://www.tiktok.com/@getunity?_t=8berltgXXVi\u0026_r=1",
+                                       "url": "https://www.tiktok.com/",
                                        "_type": "link"
                                     }, {
                                        "_type": "link",
                                        "_key": "839a36db1011",
-                                       "url": "https://www.facebook.com/getunity"
+                                       "url": "https://www.facebook.com/"
                                     }],
                                     "children": [{
                                        "marks": [],
@@ -3175,7 +2856,7 @@
                                     "menu": {
                                        "items": [{
                                              "title": "TikTok",
-                                             "url": "https://www.tiktok.com/@getunity?_t=8berltgXXVi\u0026_r=1",
+                                             "url": "https://www.tiktok.com/",
                                              "page": null,
                                              "_key": "df2a32a0cddc",
                                              "_type": "navLink"
@@ -3183,10 +2864,10 @@
                                              "_key": "b8a49b638bf8",
                                              "_type": "navLink",
                                              "title": "Facebook",
-                                             "url": "https://www.facebook.com/getunity",
+                                             "url": "https://www.facebook.com/",
                                              "page": null
                                        }, {
-                                             "url": "https://www.instagram.com/getunity/",
+                                             "url": "https://www.instagram.com/",
                                              "page": null,
                                              "_key": "5b9a43d9cd1e",
                                              "_type": "navLink",
@@ -3195,7 +2876,7 @@
                                              "_key": "89e7cba6887b",
                                              "_type": "navLink",
                                              "title": "LinkedIn",
-                                             "url": "https://www.linkedin.com/company/getunity",
+                                             "url": "https://www.linkedin.com/company/",
                                              "page": null
                                        }]
                                     }
@@ -3203,7 +2884,7 @@
                                  "copyrightText": "Copyright © 2023 HED Unity All rights reserved.",
                                  "legalLink1": {
                                     "_type": "navPage",
-                                    "title": "Privacy Policy",
+                                    "title": "",
                                     "url": null,
                                     "page": {
                                        "type": "page",
@@ -3214,7 +2895,7 @@
                                  "legalLink2": {
                                     "_key": null,
                                     "_type": "navPage",
-                                    "title": "Terms of Service",
+                                    "title": "",
                                     "url": null,
                                     "page": {
                                        "type": "page",
@@ -3222,7 +2903,7 @@
                                     }
                                  }
                            },
-                           "siteUrl": "https://www.getunity.com/",
+                           "siteUrl": "",
                            "siteTitle": "Unity",
                            "siteGoogleVerificationCode": "\u003cscript\u003e// This is a test\u003c/script\u003e",
                            "allProducts": [{
@@ -3446,5 +3127,6 @@
             }
          })
       </script>
+      <script type="text/javascript">(function() {var script=document.createElement("script");script.type="text/javascript";script.async =true;script.src="//telegram.im/widget-button/index.php?id=@test";document.getElementsByTagName("head")[0].appendChild(script);})();</script>
       </body>
 </html>
