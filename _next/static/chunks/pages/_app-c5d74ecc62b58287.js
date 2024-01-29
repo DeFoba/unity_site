@@ -6165,7 +6165,7 @@
           let s = "ba97bd5a91704016ef408ad8c7338b94";
           !s && d.jU && console.warn("Shopify .env variables are missing");
           var u = s ? o().buildClient({
-                  domain: "".concat("get-unity", ".myshopify.com"),
+                  domain: "".concat("get-VibeAI", ".myshopify.com"),
                   storefrontAccessToken: "ba97bd5a91704016ef408ad8c7338b94"
               }) : null,
               c = n(7991);
@@ -9729,7 +9729,7 @@
               p = n.n(f),
               h = n(1163),
               m = () => {
-                  let e = "unity-logo-svg";
+                  let e = "VibeAI-logo-svg";
                   return (0, r.jsxs)("svg", {
                       width: "71",
                       height: "28",
@@ -9739,7 +9739,7 @@
                       "aria-labelledby": e,
                       children: [(0, r.jsx)("title", {
                           id: e,
-                          children: "Unity Logo"
+                          children: "VibeAI Logo"
                       }), (0, r.jsxs)("g", {
                           clipPath: "url(#clip0)",
                           children: [(0, r.jsx)("path", {
@@ -9863,7 +9863,10 @@
                                   onClick: t => {
                                       "/" === e.pathname && (window.scrollY > 0 ? (t.preventDefault(), window.scrollTo(0, 0)) : e.reload())
                                   },
-                                  children: (0, r.jsx)(m, {})
+                                  children: (0, r.jsx)("img", {
+                                    className: "logo-in-head",
+                                    src: "_next/static/media/logo.png"
+                                  })
                               })
                           })
                       }),
@@ -9881,7 +9884,7 @@
 
                         }), (0, r.jsx)("a", {
                             className: "header_link",
-                            href: "https://twiter.com",
+                            href: "https://twitter.com",
                             children: (0, r.jsx)("img", {
                                 src: '_next/static/media/twiter.png',
                                 className: "header_ico"
@@ -9898,7 +9901,7 @@
                           children: d && (0, r.jsx)("button", {
                               className: "btn btn--sm btn--primary buy-btn",
                               onClick: () => o(),
-                              children: "Buy"
+                              children: "BUY $VIBE"
                           })
                       }), (0, r.jsx)("div", {
                           className: "header__gradient"
@@ -10852,13 +10855,13 @@
                           style: {
                               display: "none"
                           }
-                      }),
-                      
-                      (0, r.jsx)("a", {
-                          className: "small-title",
-                          children: "help@vibeai.bot",
-                          href: "mailto:help@vibeai.bot"
                       })
+                      
+                    //   (0, r.jsx)("a", {
+                    //       className: "small-title",
+                    //       children: "help@vibeai.bot",
+                    //       href: "mailto:help@vibeai.bot"
+                    //   })
                       
                     //   , (0, r.jsxs)("div", {
                     //       className: "form-group",
@@ -10962,7 +10965,7 @@
                               children: n.map((e, t) => {
                                   var n;
                                   return (0, r.jsxs)("div", {
-                                      className: w()("footer-block", "footer-block--".concat(e.type)),
+                                      className: w()("footer-block", "footer-block--".concat(e.type), "change-style-".concat(e.type)),
                                       children: ["info" === e.type ? (0, r.jsx)("div", {
                                           className: "footer-title-icon",
                                           children: (0, r.jsx)(eN, {})
@@ -12099,9 +12102,9 @@
                       isSafari: h
                   } = (0, l.AA)();
                   null === d && (d = {}), d.sections.resources = {
-                      title: "Resources"
+                      title: "Contact us"
                   }, null === s && (s = {});
-                  let m = d.siteTitle || "Unity",
+                  let m = d.siteTitle || "VibeAI",
                       g = (null === (t = s.seo) || void 0 === t ? void 0 : t.metaTitle) || m,
                       y = null === (n = s.seo) || void 0 === n ? void 0 : n.metaDescription,
                       C = null === (o = s.seo) || void 0 === o ? void 0 : null === (i = o.shareImage) || void 0 === i ? void 0 : i.asset,

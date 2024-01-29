@@ -295,7 +295,7 @@
                             pointerEvents: C ? null : "none"
                         },
                         onClick: l,
-                        title: "Discover Unity",
+                        title: "Discover VibeAI",
                         role: "button",
                         "aria-label": "Click to scroll down",
                         children: (0, s.jsx)("div", {
@@ -433,26 +433,26 @@
                     width: 33
                 }],
                 F = (0, C.memo)(() => (0, s.jsx)("ul", {
-                    className: "intro-featurette__icons",
-                    children: Q.map((e, t) => {
-                        let {
-                            title: i,
-                            img: C,
-                            width: l
-                        } = e;
-                        return (0, s.jsx)("li", {
-                            children: (0, s.jsx)("div", {
-                                style: {
-                                    width: l
-                                },
-                                children: (0, s.jsx)(B(), {
-                                    src: C,
-                                    alt: "".concat(i, " Logo"),
-                                    priority: !0
-                                })
-                            })
-                        }, "icon-".concat(t))
-                    })
+                    // className: "intro-featurette__icons",
+                    // children: Q.map((e, t) => {
+                    //     let {
+                    //         title: i,
+                    //         img: C,
+                    //         width: l
+                    //     } = e;
+                    //     return (0, s.jsx)("li", {
+                    //         children: (0, s.jsx)("div", {
+                    //             style: {
+                    //                 width: l
+                    //             },
+                    //             children: (0, s.jsx)(B(), {
+                    //                 src: C,
+                    //                 alt: "".concat(i, " Logo"),
+                    //                 priority: !0
+                    //             })
+                    //         })
+                    //     }, "icon-".concat(t))
+                    // })
                 }));
             var U = i(8863),
                 P = i.n(U),
@@ -487,7 +487,7 @@
                         className: "buy-btn-content",
                         children: (0, s.jsx)("button", {
                             className: "btn btn--sm btn--primary buy-btn buy-center",
-                            children: "Buy"
+                            children: "BUY $VIBE"
                         })
                     })]
                 })
@@ -1113,14 +1113,22 @@
                                 children: (0, s.jsx)("div", {
                                     ref: a,
                                     className: "btlss-title-lockup__icon-trans",
-                                    children: (0, s.jsx)(ei, {})
+                                    // children: (0, s.jsx)(ei, {})
+                                    children: [(0, s.jsx)("div", {className: "ai-icon-background ai-icon-background-mobile"}), (0, s.jsx)("img", {
+                                        src: "_next/static/media/ai-icon-1.png",
+                                        className: "ai-icon ai-icon-mobile"
+                                    })]
                                 })
                             }), i, (0, s.jsx)("div", {
                                 className: "btlss-title-lockup__icon",
                                 children: (0, s.jsx)("div", {
                                     ref: r,
                                     className: "btlss-title-lockup__icon-trans",
-                                    children: (0, s.jsx)(es, {})
+                                    // children: (0, s.jsx)(es, {})
+                                    children: [(0, s.jsx)("div", {className: "ai-icon-background ai-icon-background-mobile"}), (0, s.jsx)("img", {
+                                    src: "_next/static/media/ai-icon-2.png",
+                                    className: "ai-icon ai-icon-mobile"
+                                })]
                                 })
                             })]
                         })
@@ -1232,15 +1240,23 @@
                             className: "btlss__desk-icons-icon",
                             children: (0, s.jsx)("div", {
                                 ref: i,
-                                className: "btlss__desk-icons-icon-trans",
-                                children: (0, s.jsx)(ei, {})
+                                className: "btlss__desk-icons-icon-trans ai-icon-block",
+                                // children: (0, s.jsx)(ei, {})
+                                children: [(0, s.jsx)("div", {className: "ai-icon-background"}), (0, s.jsx)("img", {
+                                    src: "_next/static/media/ai-icon-1.png",
+                                    className: "ai-icon"
+                                })]
                             })
                         }), (0, s.jsx)("div", {
                             className: "btlss__desk-icons-icon",
                             children: (0, s.jsx)("div", {
                                 ref: l,
-                                className: "btlss__desk-icons-icon-trans",
-                                children: (0, s.jsx)(es, {})
+                                className: "btlss__desk-icons-icon-trans ai-icon-block",
+                                // children: (0, s.jsx)(es, {})
+                                children: [(0, s.jsx)("div", {className: "ai-icon-background"}), (0, s.jsx)("img", {
+                                    src: "_next/static/media/ai-icon-2.png",
+                                    className: "ai-icon"
+                                })]
                             })
                         })]
                     })
@@ -1257,9 +1273,11 @@
                         parentVariants: a,
                         childVariants: r
                     } = eA.slideDownAnimation;
+                    console.log({i})
                     return (0, s.jsxs)("div", {
                         className: j()("faq-item", C && "is-expanded"),
                         onClick: l,
+                        Style: "display:" + i + ";",
                         children: [(0, s.jsxs)("div", {
                             className: "faq-item__header",
                             children: [(0, s.jsx)("div", {
@@ -1695,7 +1713,7 @@
                                         children: (0, s.jsx)(B(), {
                                             src: eZ,
                                             layout: "fill",
-                                            alt: "Unity Headphones X-Ray"
+                                            alt: "VibeAI Headphones X-Ray"
                                         })
                                     })
                                 })
@@ -2011,7 +2029,7 @@
                         blurWidth: 4,
                         blurHeight: 8
                     },
-                    alt: "The Unity App screenshot"
+                    alt: "The VibeAI App screenshot"
                 }, {
                     image: {
                         src: "/_next/static/media/device-streams.ce9dc261.png",
@@ -2021,7 +2039,7 @@
                         blurWidth: 4,
                         blurHeight: 8
                     },
-                    alt: "Unity App Multisoure Music Player screenshot"
+                    alt: "VibeAI App Multisoure Music Player screenshot"
                 }],
                 eY = (0, C.memo)(e => {
                     let {
@@ -2072,7 +2090,9 @@
                                             href: "https://telegram.im/@test",
                                             target: "_blank",
                                             // rel: "noreferrer",
-                                            className: "telegramim_button telegramim_shadow tg_btn",
+                                            Style: "font-size:26px;width:322px;background:#27A5E7;box-shadow:1px 1px 5px #27A5E7;color:#fff;border-radius:50px;",
+                                            className: "telegramim_button telegramim_shadow telegramim_pulse tg_btn",
+                                            
                                             children: [(0, s.jsx)("i", {}), " VibeAI Platform"]
                                         })]
                                     })
@@ -2546,7 +2566,7 @@
                                 //     title: l,
                                 //     content: a,
                                 //     image: q,
-                                //     imageAlt: "Unity Headphones",
+                                //     imageAlt: "VibeAI Headphones",
                                 //     videoFileNameBase: "02_Hear",
                                 //     active: 0 === m
                                 // }, "sec-1"), 
@@ -2556,7 +2576,7 @@
                                 //     title: r,
                                 //     content: n,
                                 //     image: T,
-                                //     imageAlt: "Unity Headphones in Profile",
+                                //     imageAlt: "VibeAI Headphones in Profile",
                                 //     active: 1 === m
                                 // }, "sec-2"), 
                                 
@@ -2565,7 +2585,7 @@
                                 //     title: A,
                                 //     content: o,
                                 //     image: K,
-                                //     imageAlt: "Unity Headphones",
+                                //     imageAlt: "VibeAI Headphones",
                                 //     videoFileNameBase: "03_Waiting",
                                 //     active: 2 === m
                                 // }, "sec-3"), 
@@ -2575,7 +2595,7 @@
                                     title: h,
                                     content: x,
                                     image: W,
-                                    imageAlt: "Unity Headphones Front View",
+                                    imageAlt: "VibeAI Headphones Front View",
                                     videoFileNameBase: "04_Universe",
                                     videoForegroundImage: G,
                                     mediaMask: !0,
@@ -2714,7 +2734,7 @@
                         //     //     content: l,
                         //     //     image: eH,
                         //     //     imageMobile: eH,
-                        //     //     imageAlt: "Unity Headphones Earcups"
+                        //     //     imageAlt: "VibeAI Headphones Earcups"
                         //     // }), 
                             
                         //     (0, s.jsx)(eb, {
@@ -2724,7 +2744,7 @@
                         //         content: r,
                         //         image: e_,
                         //         imageMobile: eE,
-                        //         imageAlt: "Unity Headphones Headband",
+                        //         imageAlt: "VibeAI Headphones Headband",
                         //         vertical: !0
                         //     })
                             
@@ -2735,7 +2755,7 @@
                         //     //     content: A,
                         //     //     image: eN,
                         //     //     imageMobile: eN,
-                        //     //     imageAlt: "Unity Headphones Ear Cushions"
+                        //     //     imageAlt: "VibeAI Headphones Ear Cushions"
                         //     // })
                         
                         // ]
@@ -3119,7 +3139,7 @@
                         page: i
                     } = t;
                     i.sections.resources = {
-                        title: "Resources"
+                        title: "Contact us"
                     };
                     let r = o.q.map(e => ({
                             ...e,
