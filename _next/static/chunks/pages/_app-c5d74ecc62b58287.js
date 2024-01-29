@@ -9876,18 +9876,26 @@
                         className: "header_content_link",
                       children: [  (0, r.jsx)("a", {
                             className: "header_link",
-                            href: "https://web.telegram.org/",
+                            href: "https://t.me/vibeai_portal",
                             children: (0, r.jsx)("img", {
                                 src: '_next/static/media/telegram.png',
+                                className: "header_ico tg_scale"
+                            })
+
+                        }), (0, r.jsx)("a", {
+                            className: "header_link",
+                            href: "https://twitter.com/VibeAI_bot",
+                            children: (0, r.jsx)("img", {
+                                src: '_next/static/media/twiter.png',
                                 className: "header_ico"
                             })
 
                         }), (0, r.jsx)("a", {
                             className: "header_link",
-                            href: "https://twitter.com",
+                            href: "####",
                             children: (0, r.jsx)("img", {
-                                src: '_next/static/media/twiter.png',
-                                className: "header_ico"
+                                src: '_next/static/media/wp.png',
+                                className: "header_ico wp_scale"
                             })
 
                         })]
@@ -10971,6 +10979,7 @@
                                           children: (0, r.jsx)(eN, {})
                                       }) : (0, r.jsx)("h6", {
                                           className: "footer-title small-title",
+                                          Style: "margin:0;margin-top: 5vh;margin-bottom: 1vh;font-size: 1.4em;",
                                           children: e.title || "\xa0"
                                       }), "info" === e.type && (0, r.jsx)("div", {
                                           className: "p-sm",
@@ -11885,16 +11894,41 @@
                                       })
                                   }, t)
                               })
-                          }), i.items && i.items.length > 0 && (0, r.jsx)("div", {
+                          }), (0, r.jsx)("div", {
                               className: tr().list,
-                              children: i.items.map((e, t) => (0, r.jsx)(g.E.div, {
-                                  className: tr().li,
-                                  variants: to,
-                                  children: (0, r.jsx)(x.Z, {
-                                      link: e
-                                  })
-                              }, t))
-                          })]
+                              children: [
+
+                                (0, r.jsx)("div", {
+                                    className: "header_content_link_mobile",
+                                  children: [  (0, r.jsx)("a", {
+                                        className: "header_content_link_mobile",
+                                        href: "https://t.me/vibeai_portal",
+                                        children: (0, r.jsx)("img", {
+                                            src: '_next/static/media/telegram.png',
+                                            className: "header_ico tg_scale"
+                                        })
+            
+                                    }), (0, r.jsx)("a", {
+                                        className: "header_content_link_mobile",
+                                        href: "https://twitter.com/VibeAI_bot",
+                                        children: (0, r.jsx)("img", {
+                                            src: '_next/static/media/twiter.png',
+                                            className: "header_ico"
+                                        })
+            
+                                    }), (0, r.jsx)("a", {
+                                        className: "header_content_link_mobile",
+                                        href: "####",
+                                        children: (0, r.jsx)("img", {
+                                            src: '_next/static/media/wp.png',
+                                            className: "header_ico wp_scale"
+                                        })
+            
+                                    })]
+                                })
+                              ]
+                              })
+                          ]
                       })
                   })
               })

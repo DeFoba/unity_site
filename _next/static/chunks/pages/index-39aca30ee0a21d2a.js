@@ -467,8 +467,10 @@
                     className: "intro-featurette",
                     children: [(0, s.jsx)("div", {
                         className: "intro-featurette__title",
+                        Style: "max-width:100%;width:100%;",
                         children: (0, s.jsx)("h3", {
                             className: "large-title",
+                            Style: "max-width:100%;width:100%;text-align:center;",
                             children: t
                         })
                     }), (0, s.jsx)("div", {
@@ -487,6 +489,7 @@
                         className: "buy-btn-content",
                         children: (0, s.jsx)("button", {
                             className: "btn btn--sm btn--primary buy-btn buy-center",
+                            Style: "width: max-content;",
                             children: "BUY $VIBE"
                         })
                     })]
@@ -2087,7 +2090,7 @@
                                         className: j()("download-links", eW().links),
                                         // <a href="https://telegram.im/@test" target="_blank" class="telegramim_button telegramim_shadow telegramim_pulse" style="font-size:26px;width:322px;background:#ffffff;box-shadow:1px 1px 5px #ffffff;color:#000000;border-radius:50px;" title=""><i></i> VibeAI Platform</a>
                                         children: [(0, s.jsx)("a", {
-                                            href: "https://telegram.im/@test",
+                                            href: "https://t.me/vibeai_bot",
                                             target: "_blank",
                                             // rel: "noreferrer",
                                             Style: "font-size:26px;width:322px;background:#27A5E7;box-shadow:1px 1px 5px #27A5E7;color:#fff;border-radius:50px;",
