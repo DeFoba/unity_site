@@ -1276,7 +1276,7 @@
                         parentVariants: a,
                         childVariants: r
                     } = eA.slideDownAnimation;
-                    console.log({i})
+                    // console.log({i})
                     return (0, s.jsxs)("div", {
                         className: j()("faq-item", C && "is-expanded"),
                         onClick: l,

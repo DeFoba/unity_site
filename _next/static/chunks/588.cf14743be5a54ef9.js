@@ -105,6 +105,8 @@
                         duration: 2,
                         onUpdate: () => {
                             this.ringEngine.onParamsChanged()
+                            // location.reload()
+                            // this.render()
                         }
                     })
                 }
@@ -117,6 +119,7 @@
                     }), window.addEventListener("touchmove", this.onMouseMove, {
                         passive: !0
                     }), this.onWindowResize(), this.render())
+                    this.render()
                 }
                 onProgressChange(e) {
                     this.post.u.uProgress.value = 1 - e
@@ -126,7 +129,7 @@
                 }
                 render() {
                     if (this.raf = requestAnimationFrame(this.render.bind(this)), this.skipFrame = !this.skipFrame, this.skipFrame && !this.forceRender) return;
-                    this.forceRender = !1;
+                    this.forceRender = 1;
                     let e = Math.min(this.clock.getDelta(), .5),
                         i = this.ringEngine.update(e, -50);
                     this.particles.update(e, i), this.post.params.progress > 0 ? (this.post.renderScenePass(this.scene, this.camera), this.post.renderPostPass()) : this.renderer.render(this.scene, this.camera)
@@ -158,6 +161,7 @@
                     active: i = !1,
                     progress: n
                 } = e, r = (0, s.useRef)(), o = (0, s.useRef)(), a = (0, s.useRef)(null);
+                // console.log({a})
                 return (0, s.useEffect)(() => (a.current = new f(o.current, r.current), () => a.current.dispose()), []), (0, s.useEffect)(() => {
                     a.current.onProgressChange(n)
                 }, [n]), (0, s.useEffect)(() => {

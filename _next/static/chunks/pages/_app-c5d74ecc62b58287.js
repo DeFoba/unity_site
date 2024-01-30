@@ -9312,21 +9312,21 @@
           });
           let r = [{
             key: "bluetoothLossless",
-            hash: "lossless",
+            hash: "home",
             scrollTargetSelector: ".btlss:first-child",
             scrollTargetOffsetPercentage: .3
         }, 
         
         {
             key: "app",
-            hash: "app",
+            hash: "platform",
             scrollTargetSelector: ".app-slide, .app-fixed-slide",
             scrollTargetOffsetPercentage: 0
         }, 
         
         {
               key: "introduction",
-              hash: "intro",
+              hash: "tokenomics",
               scrollTargetSelector: ".intro-section"
           }, 
         //   {
@@ -9337,7 +9337,7 @@
           
           {
               key: "technicalSpecs",
-              hash: "specs",
+              hash: "about",
               scrollTargetSelector: ".spec-section:first-child",
               scrollTargetOffsetPercentage: .5
           },
@@ -9358,7 +9358,7 @@
         //   }, 
           {
               key: "resources",
-              hash: "resources"
+              hash: "contact"
           }]
       },
       6353: function(e, t, n) {
@@ -9877,6 +9877,7 @@
                       children: [  (0, r.jsx)("a", {
                             className: "header_link",
                             href: "https://t.me/vibeai_portal",
+                            target: "_blank",
                             children: (0, r.jsx)("img", {
                                 src: '_next/static/media/telegram.png',
                                 className: "header_ico tg_scale"
@@ -9885,6 +9886,7 @@
                         }), (0, r.jsx)("a", {
                             className: "header_link",
                             href: "https://twitter.com/VibeAI_bot",
+                            target: "_blank",
                             children: (0, r.jsx)("img", {
                                 src: '_next/static/media/twiter.png',
                                 className: "header_ico"
@@ -9893,6 +9895,7 @@
                         }), (0, r.jsx)("a", {
                             className: "header_link",
                             href: "####",
+                            target: "_blank",
                             children: (0, r.jsx)("img", {
                                 src: '_next/static/media/wp.png',
                                 className: "header_ico wp_scale"
@@ -11903,6 +11906,7 @@
                                   children: [  (0, r.jsx)("a", {
                                         className: "header_content_link_mobile",
                                         href: "https://t.me/vibeai_portal",
+                                        target: "_blank",
                                         children: (0, r.jsx)("img", {
                                             src: '_next/static/media/telegram.png',
                                             className: "header_ico tg_scale"
@@ -11911,6 +11915,7 @@
                                     }), (0, r.jsx)("a", {
                                         className: "header_content_link_mobile",
                                         href: "https://twitter.com/VibeAI_bot",
+                                        target: "_blank",
                                         children: (0, r.jsx)("img", {
                                             src: '_next/static/media/twiter.png',
                                             className: "header_ico"
@@ -11919,6 +11924,7 @@
                                     }), (0, r.jsx)("a", {
                                         className: "header_content_link_mobile",
                                         href: "####",
+                                        target: "_blank",
                                         children: (0, r.jsx)("img", {
                                             src: '_next/static/media/wp.png',
                                             className: "header_ico wp_scale"

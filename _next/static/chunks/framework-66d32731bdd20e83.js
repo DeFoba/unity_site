@@ -2294,7 +2294,7 @@
                     if (n) {
                         var t = n;
                         if (!lm(e, n)) {
-                            if (lh(e)) throw Error(f(418));
+                            if (lh(e)) throw "0";
                             n = rC(t.nextSibling);
                             var r = ls;
                             n && lm(e, n) ? lp(r, t) : (e.flags = -4097 & e.flags | 2, lf = !1, ls = e)
