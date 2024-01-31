@@ -92,6 +92,10 @@
                 }
             }
             class f {
+                init() {
+                    this.swichRender = true
+                }
+
                 loadAssets() {
                     console.log("Init animation"), a.p8.to(this.ringEngine.params, {
                         radius: 5,
@@ -114,12 +118,17 @@
                     cancelAnimationFrame(this.raf), this.raf = null, window.removeEventListener("resize", this.onWindowResize), window.removeEventListener("mousemove", this.onMouseMove), window.removeEventListener("touchstart", this.onMouseMove), window.removeEventListener("touchmove", this.onMouseMove)
                 }
                 onShow() {
-                    null === this.raf && (window.addEventListener("resize", this.onWindowResize), window.addEventListener("mousemove", this.onMouseMove), window.addEventListener("touchstart", this.onMouseMove, {
+                    (window.addEventListener("resize", this.onWindowResize), window.addEventListener("mousemove", this.onMouseMove), window.addEventListener("touchstart", this.onMouseMove, {
                         passive: !0
                     }), window.addEventListener("touchmove", this.onMouseMove, {
                         passive: !0
                     }), this.onWindowResize(), this.render())
-                    this.render()
+                    // if (this.swichRender) {
+                    //     this.render() // <----------
+                    //     this.swichRender = false
+                    // }
+                    this.onWindowResize();
+                    this.render();
                 }
                 onProgressChange(e) {
                     this.post.u.uProgress.value = 1 - e

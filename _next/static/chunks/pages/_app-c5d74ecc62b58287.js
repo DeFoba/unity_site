@@ -9894,7 +9894,8 @@
 
                         }), (0, r.jsx)("a", {
                             className: "header_link",
-                            href: "####",
+                            href: window.WhitePaper,
+                            id: "WhitePaper",
                             target: "_blank",
                             children: (0, r.jsx)("img", {
                                 src: '_next/static/media/wp.png',
@@ -11923,7 +11924,7 @@
             
                                     }), (0, r.jsx)("a", {
                                         className: "header_content_link_mobile",
-                                        href: "####",
+                                        href: window.WhitePaper,
                                         target: "_blank",
                                         children: (0, r.jsx)("img", {
                                             src: '_next/static/media/wp.png',

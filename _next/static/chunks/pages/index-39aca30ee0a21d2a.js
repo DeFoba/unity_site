@@ -2090,7 +2090,7 @@
                                         className: j()("download-links", eW().links),
                                         // <a href="https://telegram.im/@test" target="_blank" class="telegramim_button telegramim_shadow telegramim_pulse" style="font-size:26px;width:322px;background:#ffffff;box-shadow:1px 1px 5px #ffffff;color:#000000;border-radius:50px;" title=""><i></i> VibeAI Platform</a>
                                         children: [(0, s.jsx)("a", {
-                                            href: "https://t.me/vibeai_bot",
+                                            href: window.VibeLink,
                                             target: "_blank",
                                             // rel: "noreferrer",
                                             Style: "font-size:26px;width:322px;background:#27A5E7;box-shadow:1px 1px 5px #27A5E7;color:#fff;border-radius:50px;",
