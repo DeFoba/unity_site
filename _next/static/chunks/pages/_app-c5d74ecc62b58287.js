@@ -12149,7 +12149,7 @@
                       g = (null === (t = s.seo) || void 0 === t ? void 0 : t.metaTitle) || m,
                       y = null === (n = s.seo) || void 0 === n ? void 0 : n.metaDescription,
                       C = null === (o = s.seo) || void 0 === o ? void 0 : null === (i = o.shareImage) || void 0 === i ? void 0 : i.asset,
-                      b = C && c.t3.image(C).width(1200).height(630).url();
+                      b = '_next/static/media/og-vibe.png';
                   return (0, a.useEffect)(() => {
                       document.body.classList.toggle("ua-safari", h)
                   }, [h]), (0, a.useEffect)(() => {
