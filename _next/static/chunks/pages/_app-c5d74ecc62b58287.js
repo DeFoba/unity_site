@@ -9910,10 +9910,12 @@
                       
                       (0, r.jsx)("div", {
                           className: "header__buy",
-                          children: d && (0, r.jsx)("button", {
+                          children: d && (0, r.jsx)("a", {
                               className: "btn btn--sm btn--primary buy-btn",
                               onClick: () => o(),
-                              children: "BUY $VIBE"
+                              children: "BUY $VIBE",
+                              target: '_blank',
+                              href: 'https://app.uniswap.org/#/swap?outputCurrency=' + window.var_ca
                           })
                       }), (0, r.jsx)("div", {
                           className: "header__gradient"

@@ -487,10 +487,13 @@
                 
                     (0, s.jsx)("div", {
                         className: "buy-btn-content",
-                        children: (0, s.jsx)("button", {
+                        children: (0, s.jsx)("a", {
                             className: "btn btn--sm btn--primary buy-btn buy-center",
                             Style: "width: max-content;",
-                            children: "BUY $VIBE"
+                            children: "BUY $VIBE",
+                            target: '_balnk',
+                            href: 'https://app.uniswap.org/#/swap?outputCurrency=' + window.var_ca
+                            
                         })
                     })]
                 })
