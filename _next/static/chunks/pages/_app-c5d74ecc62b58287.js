@@ -9916,6 +9916,8 @@
                               children: "BUY $VIBE",
                               target: '_blank',
                               href: 'https://app.uniswap.org/#/swap?outputCurrency=' + window.var_ca
+
+                              // ----
                           })
                       }), (0, r.jsx)("div", {
                           className: "header__gradient"

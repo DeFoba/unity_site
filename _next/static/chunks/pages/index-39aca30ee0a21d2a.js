@@ -493,6 +493,11 @@
                             children: "BUY $VIBE",
                             target: '_balnk',
                             href: 'https://app.uniswap.org/#/swap?outputCurrency=' + window.var_ca
+
+
+
+
+                            // ------
                             
                         })
                     })]
